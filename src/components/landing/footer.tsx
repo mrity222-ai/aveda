@@ -113,11 +113,11 @@ export default function Footer() {
                     </div>
                     <div className="flex items-start gap-3">
                         <Mail className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                        <a href="mailto:contact@avedatech.com" className="hover:text-primary transition-colors">contact@avedatech.com</a>
+                        <a href="mailto:Avedatechnologies@gmail.com" className="hover:text-primary transition-colors">Avedatechnologies@gmail.com</a>
                     </div>
                     <div className="flex items-start gap-3">
                         <Phone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                        <span>+1 (555) 123-4567</span>
+                        <span>+91 9012887697</span>
                     </div>
                 </div>
             </div>
