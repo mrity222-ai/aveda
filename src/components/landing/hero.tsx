@@ -5,17 +5,6 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative w-full h-[calc(100vh-4rem)] flex items-center justify-center text-center">
-      <div className="absolute inset-0">
-        <Image
-          src="https://placehold.co/1920x1080.png"
-          alt="Dashboard Mockup"
-          fill
-          className="object-cover"
-          data-ai-hint="erp dashboard"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/60" />
-      </div>
       <div className="relative z-10 container mx-auto px-4 max-w-4xl">
         <div className="space-y-6">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
