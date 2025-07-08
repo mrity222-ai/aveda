@@ -37,6 +37,12 @@ const portfolioItems = [
     description: "Custom brand identities that are simple, memorable, and professional.",
     image: "https://images.unsplash.com/photo-1558655146-364adaf1fcc9?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     hint: "brand design"
+  },
+  {
+    title: "AI Consulting",
+    description: "Strategic AI consulting to integrate cutting-edge models into your business.",
+    image: "https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    hint: "artificial intelligence"
   }
 ];
 
