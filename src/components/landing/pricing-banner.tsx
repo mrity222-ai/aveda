@@ -14,16 +14,16 @@ export default function PricingBanner() {
             </div>
             <div>
               <h2 className="font-headline text-2xl md:text-3xl font-bold text-white">
-                Plans begin at ₹499/month
+                Only ₹499/month
               </h2>
               <p className="text-lg text-muted-foreground mt-1">
-                Affordable, Scalable & Powered by AI
+                Affordable. Scalable. AI-Powered.
               </p>
             </div>
           </div>
           <Button asChild size="lg" className="flex-shrink-0">
             <Link href="/contact">
-              View Pricing <ArrowRight className="ml-2 h-5 w-5" />
+              Get Started <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>
         </Card>
