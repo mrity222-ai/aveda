@@ -23,9 +23,6 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased flex flex-col min-h-screen bg-background overflow-x-hidden">
-        <div className="absolute top-0 left-0 w-full h-full -z-10 bg-background">
-          <div className="absolute top-0 left-0 w-full h-full bg-cover bg-center animated-gradient-background animate-gradient"></div>
-        </div>
         <Header />
         <main className="flex-1 w-full">
           {children}

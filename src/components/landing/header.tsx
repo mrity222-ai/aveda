@@ -20,8 +20,8 @@ const allNavLinks = [...navLinks, { href: '/contact', label: 'Contact' }];
 
 export default function Header() {
   return (
-    <header className="sticky top-4 z-50 w-full">
-      <div className="container flex h-16 max-w-screen-xl mx-auto items-center justify-between rounded-full bg-white/30 backdrop-blur-lg border border-white/20 px-6">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-16 max-w-screen-xl mx-auto items-center justify-between px-6">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Logo />
         </Link>

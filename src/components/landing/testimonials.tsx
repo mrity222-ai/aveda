@@ -10,23 +10,7 @@ const testimonials = [
     imageHint: "professional headshot man",
     quote:
       "Aveda Technologies's SaaS product revolutionized our workflow. It's intuitive, powerful, and has significantly boosted our productivity.",
-  },
-  {
-    name: "Jane Doe",
-    role: "Marketing Director, Innovate Inc.",
-    image: "https://placehold.co/100x100.png",
-    imageHint: "professional headshot woman",
-    quote:
-      "The smart analytics feature gave us insights we never knew we were missing. Our campaign ROI has increased by over 50%!",
-  },
-   {
-    name: "John Smith",
-    role: "Operations Manager, Growth Co.",
-    image: "https://placehold.co/100x100.png",
-    imageHint: "professional headshot person",
-    quote:
-      "Automating our workflows saved us countless hours. The platform is a game-changer for operational efficiency.",
-  },
+  }
 ];
 
 const StarRating = ({ rating = 5 }: { rating?: number }) => (
@@ -50,11 +34,11 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-1 lg:grid-cols-3">
+        <div className="max-w-3xl mx-auto">
           {testimonials.map((testimonial) => (
             <Card
               key={testimonial.name}
-              className="glass-card p-8 h-full flex flex-col soft-shadow"
+              className="p-8 h-full flex flex-col bg-card"
             >
               <CardContent className="p-0 flex flex-col items-center text-center flex-grow">
                 <Image

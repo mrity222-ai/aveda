@@ -75,7 +75,7 @@ export default function Footer() {
                           target="_blank"
                           rel="noopener noreferrer"
                           aria-label={label}
-                          className="text-muted-foreground hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_8px_hsl(var(--primary))] hover:scale-110 p-2 bg-secondary rounded-full"
+                          className="text-muted-foreground hover:text-primary transition-all duration-300 p-2 bg-secondary rounded-full"
                         >
                           <Icon className="h-5 w-5" />
                         </Link>
