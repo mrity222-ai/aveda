@@ -1,30 +1,27 @@
-
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CloudCog, CodeXml, PenTool, BarChart3 } from "lucide-react";
-import Link from "next/link";
-import { cn } from "@/lib/utils";
+import { CloudCog, CodeXml, BarChart3, PenTool } from 'lucide-react';
+import Link from 'next/link';
 
 const services = [
   {
-    icon: <CloudCog className="h-10 w-10 text-primary" />,
+    icon: CloudCog,
     title: "SaaS Products",
     description: "Ready-to-deploy SaaS solutions for performance and reliability.",
     href: "/saas-products",
   },
   {
-    icon: <CodeXml className="h-10 w-10 text-primary" />,
+    icon: CodeXml,
     title: "Custom Software",
     description: "Bespoke software development tailored to your specific needs.",
     href: "/custom-development",
   },
   {
-    icon: <BarChart3 className="h-10 w-10 text-primary" />,
+    icon: BarChart3,
     title: "Digital Marketing",
     description: "Data-driven strategies to amplify your brand and drive growth.",
     href: "/digital-marketing",
   },
   {
-    icon: <PenTool className="h-10 w-10 text-primary" />,
+    icon: PenTool,
     title: "UI/UX Design",
     description: "Intuitive and beautiful user interfaces for an exceptional experience.",
     href: "/ui-ux-design",
@@ -33,31 +30,32 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="container space-y-12 px-4 py-12 sm:py-16 md:py-24 lg:py-32 bg-secondary">
-      <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-        <h2 className="font-headline text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">What We Offer</h2>
-        <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-          We provide a comprehensive suite of services to power your success, from innovative products to strategic design and marketing.
-        </p>
-      </div>
-      <div className="mx-auto grid justify-center gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-stretch">
-        {services.map((service, index) => (
-          <Link key={service.title} href={service.href} className="flex">
-            <Card className={cn("flex flex-col items-center text-center p-6 transition-transform duration-300 hover:shadow-lg w-full",
-              (index === 1 || index === 2) 
-              ? "lg:scale-110 hover:scale-115 bg-card" 
-              : "hover:scale-105"
-            )}>
-              <CardHeader>
-                {service.icon}
-                <CardTitle className="font-headline mt-4 text-2xl">{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <p className="text-muted-foreground">{service.description}</p>
-              </CardContent>
-            </Card>
-          </Link>
-        ))}
+    <section className="bg-secondary py-12 px-4">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold font-headline text-foreground sm:text-4xl">What We Offer</h2>
+          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+            We provide a comprehensive suite of services to power your success, from innovative products to strategic design and marketing.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {services.map((service) => {
+            const Icon = service.icon;
+            return (
+              <Link href={service.href} key={service.title} className="block group">
+                <div className="bg-card p-8 h-full rounded-lg text-center shadow-sm transition-shadow duration-300 group-hover:shadow-xl flex flex-col items-center">
+                  <div className="flex-shrink-0">
+                    <Icon className="h-12 w-12 text-primary" />
+                  </div>
+                  <div className="mt-4 flex-grow flex flex-col">
+                    <h3 className="text-xl font-bold font-headline text-foreground mb-2">{service.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed flex-grow">{service.description}</p>
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
