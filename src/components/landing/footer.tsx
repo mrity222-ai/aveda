@@ -1,23 +1,24 @@
 
 import Link from "next/link";
 import { Mail, Phone, MapPin, Twitter, Linkedin, Github } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import Logo from "../logo";
 
-const socialLinks = [
+const socialLinks: { href: string; label: string; Icon: LucideIcon }[] = [
   {
     href: "https://twitter.com",
-    icon: <Twitter className="h-5 w-5" />,
+    Icon: Twitter,
     label: "Twitter",
   },
   {
     href: "https://linkedin.com",
-    icon: <Linkedin className="h-5 w-5" />,
+    Icon: Linkedin,
     label: "LinkedIn",
   },
   {
     href: "https://github.com",
-    icon: <Github className="h-5 w-5" />,
+    Icon: Github,
     label: "GitHub",
   },
 ];
@@ -48,16 +49,16 @@ export default function Footer() {
               Building AI-powered SaaS, custom software, and growth solutions for the future.
             </p>
              <div className="flex items-center space-x-1 pt-2">
-              {socialLinks.map((link) => (
+              {socialLinks.map(({ href, label, Icon }) => (
                 <Link
-                  key={link.label}
-                  href={link.href}
+                  key={label}
+                  href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={link.label}
+                  aria-label={label}
                   className="rounded-md p-2 text-muted-foreground transition-colors hover:bg-primary/10 hover:text-primary"
                 >
-                  {link.icon}
+                  <Icon className="h-5 w-5" />
                 </Link>
               ))}
             </div>
