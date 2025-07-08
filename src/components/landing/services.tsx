@@ -2,6 +2,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CloudCog, CodeXml, PenTool, BarChart3 } from "lucide-react";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 const services = [
   {
@@ -39,10 +40,14 @@ export default function Services() {
           We provide a comprehensive suite of services to power your success, from innovative products to strategic design and marketing.
         </p>
       </div>
-      <div className="mx-auto grid justify-center gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-        {services.map((service) => (
+      <div className="mx-auto grid justify-center gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-end">
+        {services.map((service, index) => (
           <Link key={service.title} href={service.href} className="flex">
-            <Card className="flex flex-col items-center text-center p-6 transition-transform duration-300 hover:scale-105 hover:shadow-lg w-full">
+            <Card className={cn("flex flex-col items-center text-center p-6 transition-transform duration-300 hover:shadow-lg w-full",
+              (index === 1 || index === 2) 
+              ? "lg:scale-110 hover:scale-115 bg-card" 
+              : "hover:scale-105"
+            )}>
               <CardHeader>
                 {service.icon}
                 <CardTitle className="font-headline mt-4 text-2xl">{service.title}</CardTitle>
