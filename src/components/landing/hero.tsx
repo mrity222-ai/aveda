@@ -24,7 +24,7 @@ export default function Hero() {
         </div>
         <div className="relative flex items-center justify-center [perspective:1000px]">
             <Image
-                src="https://placehold.co/1200x800.png"
+                src="https://images.unsplash.com/photo-1682348122971-d6891829994c?q=80&w=1968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Dashboard Mockup"
                 width={1200}
                 height={800}
