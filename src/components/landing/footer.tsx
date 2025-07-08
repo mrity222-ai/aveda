@@ -31,8 +31,8 @@ const quickLinks = [
 
 const serviceLinks = [
     { href: "/products", label: "SaaS Products" },
-    { href: "/services#custom-development", label: "Custom Development" },
-    { href: "/services#digital-marketing", label: "Digital Marketing" },
+    { href: "/services#custom-software", label: "Custom Software" },
+    { href: "/services#ui-ux-design", label: "UI/UX Design" },
 ];
 
 export default function Footer() {

@@ -11,7 +11,7 @@ export default function CustomDevelopmentPage() {
       <main className="flex-1">
         <section className="container px-4 py-16 md:py-24 lg:py-32">
            <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center mb-12">
-            <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Custom Development</h1>
+            <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Custom Software</h1>
             <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
                 Bring your unique ideas to life with our bespoke software development services, tailored to your specific requirements.
             </p>
@@ -21,7 +21,7 @@ export default function CustomDevelopmentPage() {
             <div>
                  <Image
                     src="https://placehold.co/600x400.png"
-                    alt="Custom Development"
+                    alt="Custom Software Development"
                     width={600}
                     height={400}
                     className="rounded-lg object-cover shadow-lg"

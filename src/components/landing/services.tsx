@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CloudCog, CodeXml, BarChart3 } from "lucide-react";
+import { CloudCog, CodeXml, PenTool } from "lucide-react";
 import Link from "next/link";
 
 const services = [
@@ -11,15 +11,15 @@ const services = [
   },
   {
     icon: <CodeXml className="h-10 w-10 text-primary" />,
-    title: "Custom Development",
+    title: "Custom Software",
     description: "Bring your unique ideas to life with our bespoke software development services.",
     href: "/custom-development",
   },
   {
-    icon: <BarChart3 className="h-10 w-10 text-primary" />,
-    title: "Digital Marketing",
-    description: "Amplify your brand's reach and drive growth with data-driven marketing strategies.",
-    href: "/digital-marketing",
+    icon: <PenTool className="h-10 w-10 text-primary" />,
+    title: "UI/UX Design",
+    description: "Creating intuitive and beautiful user interfaces for an exceptional user experience.",
+    href: "/ui-ux-design",
   },
 ];
 
@@ -29,7 +29,7 @@ export default function Services() {
       <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
         <h2 className="font-headline text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">What We Offer</h2>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-          We provide a comprehensive suite of services to power your success, from innovative products to strategic marketing.
+          We provide a comprehensive suite of services to power your success, from innovative products to strategic design.
         </p>
       </div>
       <div className="mx-auto grid justify-center gap-8 sm:grid-cols-1 md:grid-cols-3">
