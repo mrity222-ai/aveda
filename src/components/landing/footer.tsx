@@ -1,6 +1,5 @@
-
 import Link from "next/link";
-import { Twitter, Linkedin, Github, Mail, Phone, MapPin } from "lucide-react";
+import { Twitter, Linkedin, Github, Mail, Phone, MapPin, Instagram, Youtube, Facebook } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import Logo from "../logo";
@@ -20,6 +19,21 @@ const socialLinks: { href: string; label: string; Icon: LucideIcon }[] = [
     href: "https://github.com",
     Icon: Github,
     label: "GitHub",
+  },
+  {
+    href: "https://instagram.com",
+    Icon: Instagram,
+    label: "Instagram",
+  },
+  {
+    href: "https://youtube.com",
+    Icon: Youtube,
+    label: "YouTube",
+  },
+  {
+    href: "https://facebook.com",
+    Icon: Facebook,
+    label: "Facebook",
   },
 ];
 
