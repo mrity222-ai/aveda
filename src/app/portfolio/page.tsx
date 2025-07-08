@@ -23,8 +23,8 @@ const portfolioItems = [
     title: 'FinTech Brand Launch',
     category: 'Digital Marketing',
     description: 'A successful digital marketing campaign that established a new FinTech brand, driving significant user acquisition.',
-    image: 'https://images.unsplash.com/photo-1642139049021-3854746c5a0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    imageHint: 'financial chart growth',
+    image: 'https://images.unsplash.com/photo-1559526324-c1f275fbfa32?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageHint: 'fintech meeting',
     tags: ['Marketing', 'Branding', 'SEO'],
   },
   {
