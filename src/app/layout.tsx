@@ -22,7 +22,12 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased flex flex-col min-h-screen bg-transparent overflow-x-hidden">
+      <body className="font-body antialiased flex flex-col min-h-screen bg-background overflow-x-hidden relative">
+        <div className="fixed inset-0 -z-50">
+          <div className="absolute inset-0 bg-background" />
+          <div className="absolute top-0 left-0 w-[50rem] h-[50rem] bg-primary/10 rounded-full blur-3xl animate-pulse-blob [animation-delay:-4s]" />
+          <div className="absolute bottom-0 right-0 w-[50rem] h-[50rem] bg-accent/10 rounded-full blur-3xl animate-pulse-blob [animation-delay:-2s]" />
+        </div>
         <Header />
         <main className="flex-1 w-full">
           {children}

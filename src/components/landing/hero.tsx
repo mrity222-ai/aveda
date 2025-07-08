@@ -25,7 +25,7 @@ export default function Hero() {
                 alt="Dashboard Mockup"
                 width={1200}
                 height={800}
-                className="w-full h-auto rounded-lg object-cover shadow-2xl border"
+                className="w-full h-auto rounded-lg object-cover shadow-2xl border-white/10 bg-card/50 backdrop-blur-sm"
                 data-ai-hint="erp dashboard"
                 priority
             />
