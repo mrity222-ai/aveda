@@ -4,20 +4,12 @@ import Image from "next/image";
 
 const testimonials = [
   {
-    name: "Sarah L.",
-    role: "CEO, Innovate Inc.",
+    name: "Satisfied Client",
+    role: "CEO, Tech Solutions",
     image: "https://placehold.co/100x100.png",
-    imageHint: "professional headshot woman",
+    imageHint: "professional headshot person",
     quote:
-      "Aveda Technologies's AI platform has been a complete game-changer for our team. The insights are incredible and have directly impacted our bottom line.",
-  },
-  {
-    name: "Mike D.",
-    role: "Marketing Director, Growth Co.",
-    image: "https://placehold.co/100x100.png",
-    imageHint: "professional headshot man",
-    quote:
-      "We've tried other platforms, but nothing comes close. The automated workflows have saved us hundreds of hours and let us focus on what matters.",
+      "Aveda Technologies's SaaS product revolutionized our workflow. It's intuitive, powerful, and has significantly boosted our productivity.",
   },
 ];
 
@@ -42,7 +34,7 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 max-w-5xl mx-auto">
+        <div className="grid gap-8 max-w-2xl mx-auto">
           {testimonials.map((testimonial) => (
             <Card
               key={testimonial.name}
