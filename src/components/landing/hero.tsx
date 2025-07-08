@@ -4,22 +4,8 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative w-full flex items-center justify-center text-center overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-full z-[-1]">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover"
-        >
-          {/* Using a placeholder video from Pexels. Replace with your own video file. */}
-          <source src="https://videos.pexels.com/video-files/853875/853875-hd_1280_720_24fps.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-white/60"></div>
-      </div>
+    <section className="relative w-full flex items-center justify-center text-center overflow-hidden min-h-[75vh]">
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white via-gray-50 to-gray-100 z-[-1]"></div>
       
       <div className="container max-w-7xl xl:max-w-screen-xl relative z-10 grid place-items-center gap-10 px-4 py-20 text-center text-foreground md:py-32">
         <div className="space-y-6">
