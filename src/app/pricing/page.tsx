@@ -21,7 +21,7 @@ const tiers = [
   },
   {
     name: "Business",
-    price: "₹1,999",
+    price: "₹1,349",
     priceSuffix: "/month",
     description: "For growing businesses that need more power.",
     features: [
