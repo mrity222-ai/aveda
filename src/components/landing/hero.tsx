@@ -1,19 +1,20 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
     <section className="relative w-full flex items-center justify-center text-center overflow-hidden min-h-[75vh]">
-      <Image
-        src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="Hero background showing abstract technology elements"
-        fill
-        className="object-cover"
-        data-ai-hint="abstract technology"
-        priority
-      />
+      <div className="absolute inset-0 w-full h-full overflow-hidden">
+        <video
+          src="https://videos.pexels.com/video-files/8571827/8571827-hd.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+        />
+      </div>
       <div className="absolute inset-0 bg-black/60" />
 
       <div className="max-w-screen-xl mx-auto relative z-10 grid place-items-center gap-10 px-4 py-20 text-center text-primary-foreground md:py-32">
