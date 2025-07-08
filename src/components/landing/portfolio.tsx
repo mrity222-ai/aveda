@@ -8,25 +8,25 @@ const portfolioItems = [
   {
     title: "Project Alpha",
     description: "A comprehensive SaaS platform for enterprise resource planning.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1613347761493-4060c969cd28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkYXNoYm9hcmQlMjBhbmFseXRpY3N8ZW58MHx8fHwxNzUxOTgxNjg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
     hint: "dashboard analytics"
   },
   {
     title: "Project Beta",
     description: "A sleek and intuitive mobile application for social networking.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1514575110897-1253ff7b2ccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb2JpbGUlMjBhcHB8ZW58MHx8fHwxNzUxOTgxNjg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
     hint: "mobile app"
   },
   {
     title: "Project Gamma",
     description: "An e-commerce solution with a custom CMS and payment integration.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1706958920654-8cf86173e21b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlLWNvbW1lcmNlJTIwd2Vic2l0ZXxlbnwwfHx8fDE3NTE5ODE2ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
     hint: "e-commerce website"
   },
   {
     title: "Project Delta",
     description: "Custom analytics dashboard for a major digital marketing campaign.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhbmFseXRpY3MlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzUxOTgxNjg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
     hint: "analytics dashboard"
   },
 ];
