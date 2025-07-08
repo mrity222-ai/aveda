@@ -40,7 +40,7 @@ export default function Services() {
           We provide a comprehensive suite of services to power your success, from innovative products to strategic design and marketing.
         </p>
       </div>
-      <div className="mx-auto grid justify-center gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-end">
+      <div className="mx-auto grid justify-center gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-stretch">
         {services.map((service, index) => (
           <Link key={service.title} href={service.href} className="flex">
             <Card className={cn("flex flex-col items-center text-center p-6 transition-transform duration-300 hover:shadow-lg w-full",
