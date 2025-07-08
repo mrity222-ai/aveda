@@ -1,4 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
 const portfolioItems = [
@@ -30,7 +33,7 @@ const portfolioItems = [
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="container space-y-12 px-4 py-16 md:py-24 lg:py-32 bg-secondary">
+    <section id="portfolio" className="container space-y-12 px-4 py-16 md:py-24 lg:py-32">
       <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
         <h2 className="font-headline text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">Our Work</h2>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
@@ -56,6 +59,13 @@ export default function Portfolio() {
             </CardContent>
           </Card>
         ))}
+      </div>
+       <div className="text-center">
+        <Button asChild size="lg">
+          <Link href="/portfolio">
+            View All Projects <ArrowRight className="ml-2 h-5 w-5" />
+          </Link>
+        </Button>
       </div>
     </section>
   );
