@@ -4,28 +4,12 @@ import Image from "next/image";
 
 const testimonials = [
   {
-    name: "Satisfied Client",
-    role: "CEO, Tech Solutions",
+    name: "CEO of a Satisfied Client",
+    role: "",
     image: "https://placehold.co/100x100.png",
     imageHint: "professional headshot person",
     quote:
       "Aveda Technologies's SaaS product revolutionized our workflow. It's intuitive, powerful, and has significantly boosted our productivity.",
-  },
-  {
-    name: "Jane Doe",
-    role: "Marketing Director, Innovate Inc.",
-    image: "https://placehold.co/100x100.png",
-    imageHint: "professional headshot woman",
-    quote:
-      "The smart analytics feature gave us insights we never knew we were missing. Our campaign ROI has increased by over 50%!",
-  },
-  {
-    name: "John Smith",
-    role: "Operations Manager, Growth Co.",
-    image: "https://placehold.co/100x100.png",
-    imageHint: "professional headshot man",
-    quote:
-      "Automating our workflows saved us countless hours. The platform is a game-changer for operational efficiency.",
   },
 ];
 
@@ -50,11 +34,11 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="flex justify-center">
           {testimonials.map((testimonial) => (
             <Card
               key={testimonial.name}
-              className="bg-background/80 backdrop-blur-sm p-8 soft-shadow border h-full flex flex-col"
+              className="bg-background/80 backdrop-blur-sm p-8 soft-shadow border h-full flex flex-col max-w-2xl"
             >
               <CardContent className="p-0 flex flex-col items-center text-center flex-grow">
                 <Image
@@ -72,10 +56,10 @@ export default function Testimonials() {
                   </p>
                 </blockquote>
                  <footer className="mt-4 text-base font-semibold text-foreground">
-                    — {testimonial.name},{" "}
-                    <span className="font-normal text-muted-foreground">
-                      {testimonial.role}
-                    </span>
+                    — {testimonial.name}
+                    {testimonial.role && 
+                        <>, <span className="font-normal text-muted-foreground">{testimonial.role}</span></>
+                    }
                   </footer>
               </CardContent>
             </Card>
