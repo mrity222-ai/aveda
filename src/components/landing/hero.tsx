@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-white/60"></div>
       </div>
       
-      <div className="container relative z-10 grid place-items-center gap-10 px-4 py-20 text-center text-foreground md:py-32">
+      <div className="container max-w-7xl xl:max-w-screen-xl relative z-10 grid place-items-center gap-10 px-4 py-20 text-center text-foreground md:py-32">
         <div className="space-y-6">
           <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
             Innovate, Build, and Grow with Aveda Technologies
