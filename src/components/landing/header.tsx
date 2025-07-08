@@ -20,7 +20,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-lg">
       <div className="container flex h-16 max-w-screen-xl mx-auto items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Logo className="h-8" />
@@ -30,7 +30,7 @@ export default function Header() {
             <Link
               key={item.label}
               href={item.href}
-              className="font-medium text-foreground/60 transition-colors hover:text-foreground/80"
+              className="font-medium text-foreground/60 glow-on-hover px-3 py-2 rounded-md"
             >
               {item.label}
             </Link>
@@ -44,7 +44,7 @@ export default function Header() {
                 <span className="sr-only">Toggle Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[80%]">
+            <SheetContent side="right" className="w-[80%] bg-background/90 backdrop-blur-lg">
               <div className="p-4">
                 <div className="flex justify-between items-center mb-6">
                    <Link href="/" className="flex items-center space-x-2" onClick={() => setIsMobileMenuOpen(false)}>
@@ -60,7 +60,7 @@ export default function Header() {
                     <Link
                       key={item.label}
                       href={item.href}
-                      className="text-lg font-medium"
+                      className="text-lg font-medium text-foreground/80 hover:text-white"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {item.label}
