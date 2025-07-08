@@ -30,11 +30,11 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="bg-secondary py-12 px-4">
+    <section className="bg-gray-800 text-white py-10 px-4">
       <div className="max-w-6xl xl:max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold font-headline text-foreground sm:text-4xl">What We Offer</h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold font-headline sm:text-4xl">What We Offer</h2>
+          <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
             We provide a comprehensive suite of services to power your success, from innovative products to strategic design and marketing.
           </p>
         </div>
@@ -43,13 +43,13 @@ export default function Services() {
             const Icon = service.icon;
             return (
               <Link href={service.href} key={service.title} className="block group">
-                <div className="bg-card p-8 h-full rounded-lg text-center shadow-sm transition-shadow duration-300 group-hover:shadow-xl flex flex-col items-center">
+                <div className="bg-gray-900 p-8 h-full rounded-lg text-center shadow-sm transition-shadow duration-300 group-hover:shadow-xl group-hover:shadow-primary/20 flex flex-col items-center">
                   <div className="flex-shrink-0">
                     <Icon className="h-12 w-12 text-primary" />
                   </div>
                   <div className="mt-4 flex-grow flex flex-col">
-                    <h3 className="text-xl font-bold font-headline text-foreground mb-2">{service.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed flex-grow">{service.description}</p>
+                    <h3 className="text-xl font-bold font-headline mb-2">{service.title}</h3>
+                    <p className="text-gray-400 text-sm leading-relaxed flex-grow">{service.description}</p>
                   </div>
                 </div>
               </Link>
