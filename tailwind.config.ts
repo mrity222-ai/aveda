@@ -92,11 +92,16 @@ export default {
           '0%, 100%': { transform: 'scale(1)', opacity: '0.2' },
           '50%': { transform: 'scale(1.4)', opacity: '0.3' },
         },
+        'pulse-blob-fast': {
+          '0%, 100%': { transform: 'scale(1.1)', opacity: '0.15' },
+          '50%': { transform: 'scale(1.3)', opacity: '0.25' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'pulse-blob': 'pulse-blob 15s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'pulse-blob-fast': 'pulse-blob-fast 10s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
     },
   },

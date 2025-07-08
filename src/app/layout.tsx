@@ -26,7 +26,7 @@ export default function RootLayout({
         <div className="fixed inset-0 -z-50">
           <div className="absolute inset-0 bg-background" />
           <div className="absolute top-0 left-0 w-[50rem] h-[50rem] bg-primary/10 rounded-full blur-3xl animate-pulse-blob [animation-delay:-4s]" />
-          <div className="absolute bottom-0 right-0 w-[50rem] h-[50rem] bg-accent/10 rounded-full blur-3xl animate-pulse-blob [animation-delay:-2s]" />
+          <div className="absolute bottom-0 right-0 w-[60rem] h-[40rem] bg-primary/10 rounded-full blur-3xl animate-pulse-blob-fast [animation-delay:-2s]" />
         </div>
         <Header />
         <main className="flex-1 w-full">
