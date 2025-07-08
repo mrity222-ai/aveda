@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className="relative w-full flex items-center justify-center text-center overflow-hidden min-h-[75vh]">
       <Image
-        src="https://placehold.co/1920x1080.png"
+        src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="Hero background showing abstract technology elements"
         fill
         className="object-cover"

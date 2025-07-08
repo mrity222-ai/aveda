@@ -4,22 +4,26 @@ const teamMembers = [
   {
     name: "John Doe",
     role: "CEO",
-    hint: "professional headshot man"
+    hint: "professional headshot man",
+    image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Jane Smith",
     role: "CTO",
-    hint: "professional headshot woman"
+    hint: "professional headshot woman",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Robert Johnson",
     role: "CFO",
-    hint: "professional headshot man"
+    hint: "professional headshot man",
+    image: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?q=80&w=1921&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Emily White",
     role: "Head of Marketing",
-    hint: "professional headshot woman"
+    hint: "professional headshot woman",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ];
 
@@ -41,7 +45,7 @@ export default function AboutPage() {
           </div>
           <div className="flex items-center justify-center">
             <Image
-              src="https://placehold.co/600x400.png"
+              src="https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Aveda Technologies Team"
               width={600}
               height={400}
@@ -66,7 +70,7 @@ export default function AboutPage() {
             {teamMembers.map((member) => (
               <div key={member.name} className="text-center flex flex-col items-center">
                 <Image
-                  src="https://placehold.co/400x400.png"
+                  src={member.image}
                   alt={`Photo of ${member.name}`}
                   width={150}
                   height={150}

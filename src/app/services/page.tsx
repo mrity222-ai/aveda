@@ -9,7 +9,7 @@ const services = [
         id: "saas-products",
         title: "SaaS Products",
         description: "Launch and scale your business with our ready-to-deploy, customizable SaaS solutions designed for performance and reliability.",
-        image: "https://placehold.co/600x400.png",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         imageHint: "saas dashboard",
         link: "/saas-products",
         features: [
@@ -22,7 +22,7 @@ const services = [
         id: "custom-software",
         title: "Custom Software Development",
         description: "Bring your unique ideas to life with our bespoke software development services, tailored to your specific requirements.",
-        image: "https://placehold.co/600x400.png",
+        image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         imageHint: "software development",
         link: "/custom-development",
         features: [
@@ -35,7 +35,7 @@ const services = [
         id: "digital-marketing",
         title: "Digital Marketing",
         description: "Amplify your brand's reach and drive growth with data-driven digital marketing strategies that deliver measurable results.",
-        image: "https://placehold.co/600x400.png",
+        image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         imageHint: "marketing chart",
         link: "/digital-marketing",
         features: [
@@ -48,7 +48,7 @@ const services = [
         id: "ui-ux-design",
         title: "UI/UX Design",
         description: "We design intuitive and beautiful user interfaces for an exceptional user experience that delights users and meets business goals.",
-        image: "https://placehold.co/600x400.png",
+        image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         imageHint: "design wireframe",
         link: "/ui-ux-design",
         features: [
@@ -61,7 +61,7 @@ const services = [
         id: "logo-branding",
         title: "Logo & Branding Design",
         description: "Craft a memorable brand identity that resonates with your audience and sets you apart from the competition.",
-        image: "https://placehold.co/600x400.png",
+        image: "https://images.unsplash.com/photo-1558655146-364adaf1fcc9?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         imageHint: "brand moodboard",
         link: null,
         features: [
@@ -74,7 +74,7 @@ const services = [
         id: "ai-consulting",
         title: "Technology & AI Consulting",
         description: "Leverage our expertise to navigate the complex technology landscape and unlock the power of AI for your business.",
-        image: "https://placehold.co/600x400.png",
+        image: "https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         imageHint: "artificial intelligence",
         link: null,
         features: [

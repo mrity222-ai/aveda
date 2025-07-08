@@ -8,25 +8,25 @@ const portfolioItems = [
   {
     title: "Project Alpha",
     description: "A comprehensive SaaS platform for enterprise resource planning.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     hint: "dashboard analytics"
   },
   {
     title: "Project Beta",
     description: "A sleek and intuitive mobile application for social networking.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1601972603402-471a930155b0?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     hint: "mobile app"
   },
   {
     title: "Project Gamma",
     description: "An e-commerce solution with a custom CMS and payment integration.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     hint: "e-commerce website"
   },
   {
     title: "Project Delta",
     description: "Custom analytics dashboard for a major digital marketing campaign.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     hint: "analytics dashboard"
   },
 ];
