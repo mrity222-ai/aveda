@@ -44,7 +44,7 @@ export default function ContactPage() {
   }
 
   return (
-    <section className="container max-w-7xl xl:max-w-screen-xl px-4 py-16">
+    <section className="max-w-screen-xl mx-auto px-4 py-16">
       <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
         <h1 className="font-headline text-4xl font-bold leading-[1.1] sm:text-5xl md:text-6xl">Get In Touch</h1>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">

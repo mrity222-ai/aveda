@@ -88,7 +88,7 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <section className="container max-w-7xl xl:max-w-screen-xl px-4 py-16">
+    <section className="max-w-screen-xl mx-auto px-4 py-16">
       <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center mb-16">
         <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Our Services</h1>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
@@ -105,7 +105,7 @@ export default function ServicesPage() {
                 alt={service.title}
                 width={600}
                 height={400}
-                className="rounded-lg object-cover shadow-lg"
+                className="w-full h-auto rounded-lg object-cover shadow-lg"
                 data-ai-hint={service.imageHint}
               />
             </div>

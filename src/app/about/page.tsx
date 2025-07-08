@@ -26,7 +26,7 @@ const teamMembers = [
 export default function AboutPage() {
   return (
     <>
-      <section className="container max-w-7xl xl:max-w-screen-xl px-4 py-16">
+      <section className="max-w-screen-xl mx-auto px-4 py-16">
         <div className="grid gap-12 md:grid-cols-2 md:gap-16">
           <div className="space-y-6">
             <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
@@ -45,7 +45,7 @@ export default function AboutPage() {
               alt="Aveda Technologies Team"
               width={600}
               height={400}
-              className="rounded-lg object-cover shadow-lg"
+              className="w-full h-auto rounded-lg object-cover shadow-lg"
               data-ai-hint="team meeting"
             />
           </div>
@@ -53,7 +53,7 @@ export default function AboutPage() {
       </section>
 
       <section className="bg-secondary py-16">
-        <div className="container max-w-7xl xl:max-w-screen-xl px-4">
+        <div className="max-w-screen-xl mx-auto px-4">
           <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center mb-12">
             <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
               Meet Our Team

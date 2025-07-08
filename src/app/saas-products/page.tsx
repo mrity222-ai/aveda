@@ -117,7 +117,7 @@ const erpModules: { title: string; icon: ReactElement; features: { step: number 
 
 export default function SaasProductsPage() {
   return (
-    <section className="container max-w-7xl xl:max-w-screen-xl px-4 py-16">
+    <section className="max-w-screen-xl mx-auto px-4 py-16">
       <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center mb-12">
         <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Our AI-Powered ERP Suite</h1>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">

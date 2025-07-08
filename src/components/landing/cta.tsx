@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 export default function CTA() {
   return (
     <section className="w-full bg-secondary">
-      <div className="container max-w-7xl xl:max-w-screen-xl grid items-center justify-center gap-4 px-4 py-16 text-center md:px-6">
+      <div className="max-w-screen-xl mx-auto grid items-center justify-center gap-4 px-4 py-16 text-center md:px-6">
         <div className="space-y-3">
           <h2 className="text-3xl font-bold font-headline tracking-tighter md:text-4xl/tight">
             Ready to Start Your Project?
