@@ -1,24 +1,30 @@
-import { CloudCog, CodeXml, BarChart3, BrainCircuit, DatabaseZap, Workflow } from 'lucide-react';
+import { CloudCog, BrainCircuit, CodeXml, BarChart3 } from 'lucide-react';
 import Link from 'next/link';
 
 const services = [
   {
-    icon: DatabaseZap,
-    title: "AI-Powered Analytics",
-    description: "Unlock actionable insights with our predictive analytics and intelligent data processing platform.",
+    icon: CloudCog,
+    title: "SaaS Products",
+    description: "Ready-to-deploy SaaS solutions for performance and reliability.",
     href: "/saas-products",
   },
   {
-    icon: Workflow,
-    title: "Automated Workflows",
-    description: "Streamline your business operations with customizable, AI-driven workflow automation.",
+    icon: BrainCircuit,
+    title: "AI Integration",
+    description: "Leverage the power of AI to automate and enhance your business processes.",
     href: "/services#ai-consulting",
   },
   {
     icon: CodeXml,
-    title: "Custom Integrations",
-    description: "Seamlessly connect our SaaS solutions with your existing technology stack for unified performance.",
+    title: "Custom Software",
+    description: "Bespoke software development tailored to your specific needs.",
     href: "/custom-development",
+  },
+  {
+    icon: BarChart3,
+    title: "Digital Marketing",
+    description: "Data-driven strategies to amplify your brand and drive growth.",
+    href: "/digital-marketing",
   },
 ];
 
@@ -29,15 +35,15 @@ export default function Services() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
           <div className="space-y-4">
              <div className="inline-block rounded-full bg-secondary/20 px-4 py-2 text-sm font-semibold text-secondary">
-              Core Features
+              Our Services
             </div>
-            <h2 className="text-4xl font-bold font-headline tracking-tighter sm:text-5xl">Everything You Need to Succeed</h2>
+            <h2 className="text-4xl font-bold font-headline tracking-tighter sm:text-5xl">What We Offer</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Our platform is built with a powerful set of features designed to scale with your business and drive exceptional results.
+              We provide a comprehensive suite of services to power your success, from innovative products to strategic design and marketing.
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-sm items-start gap-12 sm:max-w-4xl sm:grid-cols-2 md:gap-16 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto grid max-w-sm items-start gap-12 sm:max-w-4xl sm:grid-cols-2 md:gap-16 lg:max-w-none lg:grid-cols-4">
           {services.map((service) => {
             const Icon = service.icon;
             return (
