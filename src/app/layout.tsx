@@ -24,7 +24,7 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased flex flex-col min-h-screen bg-background overflow-x-hidden">
         <div className="absolute top-0 left-0 w-full h-full -z-10 bg-background">
-          <div className="absolute top-0 left-0 w-full h-full bg-cover bg-center" style={{backgroundImage: 'radial-gradient(circle at 10% 20%, hsl(var(--primary) / 0.1), transparent 40%), radial-gradient(circle at 90% 80%, hsl(262 83% 58% / 0.1), transparent 40%)'}}></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-cover bg-center animated-gradient-background animate-gradient"></div>
         </div>
         <Header />
         <main className="flex-1 w-full">
