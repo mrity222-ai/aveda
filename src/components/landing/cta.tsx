@@ -4,13 +4,13 @@ import { ArrowRight } from "lucide-react";
 
 export default function CTA() {
   return (
-    <section className="w-full bg-destructive text-destructive-foreground">
+    <section className="w-full bg-primary text-primary-foreground">
       <div className="max-w-screen-xl mx-auto grid items-center justify-center gap-4 px-4 py-16 text-center md:px-6">
         <div className="space-y-3">
           <h2 className="text-3xl font-bold font-headline tracking-tighter md:text-4xl/tight">
             Ready to Start Your Project?
           </h2>
-          <p className="mx-auto max-w-[600px] text-destructive-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          <p className="mx-auto max-w-[600px] text-primary-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Let's build something amazing together. Reach out to us to discuss your ideas and see how we can help you achieve your goals.
           </p>
         </div>
