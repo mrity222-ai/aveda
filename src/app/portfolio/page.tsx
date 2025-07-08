@@ -15,7 +15,7 @@ const portfolioItems = [
     hint: "design wireframe"
   },
   {
-    title: "Project Gamma",
+    title: "E-Commerce Store",
     description: "An e-commerce solution with a custom CMS and payment integration.",
     image: "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     hint: "e-commerce website"
