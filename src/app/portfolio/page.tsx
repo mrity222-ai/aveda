@@ -9,10 +9,10 @@ const portfolioItems = [
     hint: "dashboard analytics"
   },
   {
-    title: "Project Beta",
-    description: "A sleek and intuitive mobile application for social networking.",
-    image: "https://images.unsplash.com/photo-1601972603402-471a930155b0?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    hint: "mobile app"
+    title: "UI/UX Design",
+    description: "Intuitive designs with Figma, built for real users and real business goals.",
+    image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    hint: "design wireframe"
   },
   {
     title: "Project Gamma",
