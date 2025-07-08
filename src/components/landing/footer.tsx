@@ -1,6 +1,8 @@
+
 import Link from "next/link";
 import { Mail, Phone, MapPin, Twitter, Linkedin, Github } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import Logo from "../logo";
 
 const socialLinks = [
   {
@@ -40,8 +42,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Column 1: Company Branding */}
           <div className="space-y-4">
-            <h3 className="font-headline text-2xl font-bold text-primary">Aveda Technologies</h3>
-            <p className="text-muted-foreground">
+            <Logo showTagline={true} className="h-12" />
+            <p className="text-muted-foreground pt-2">
               Building AI-powered SaaS, custom software, and growth solutions for the future.
             </p>
           </div>
