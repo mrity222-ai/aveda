@@ -21,7 +21,7 @@ const socialLinks: { href: string; label: string; Icon: LucideIcon }[] = [
     label: "GitHub",
   },
   {
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/aveda_technology?igsh=MXVpNzVmcHV6M3dncw==",
     Icon: Instagram,
     label: "Instagram",
   },
