@@ -6,10 +6,10 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 
 const portfolioItems = [
   {
-    title: "Project Alpha",
-    description: "A comprehensive SaaS platform for enterprise resource planning.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    hint: "dashboard analytics"
+    title: "Landing Pages",
+    description: "High-converting pages for product launches or ads.",
+    image: "https://images.unsplash.com/photo-1604079628040-94301bb21b91?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    hint: "landing page"
   },
   {
     title: "UI/UX Design",
