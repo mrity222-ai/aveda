@@ -5,7 +5,6 @@ import LogoCarousel from '@/components/landing/logo-carousel';
 import Testimonials from '@/components/landing/testimonials';
 import Footer from '@/components/landing/footer';
 import Portfolio from '@/components/landing/portfolio';
-import Contact from '@/components/landing/contact';
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
         <Portfolio />
         <Testimonials />
         <LogoCarousel />
-        <Contact />
       </main>
       <Footer />
     </div>
