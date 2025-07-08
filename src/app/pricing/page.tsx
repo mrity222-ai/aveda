@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import Link from "next/link";
@@ -40,6 +41,7 @@ const tiers = [
     priceSuffix: "",
     description: "For large organizations with custom needs.",
     features: [
+      "Unlimited Users",
       "Everything in Business",
       "Custom Module Development",
       "Dedicated Account Manager",
