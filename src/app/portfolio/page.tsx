@@ -59,6 +59,14 @@ const portfolioItems = [
     imageHint: 'AI chatbot',
     tags: ['AI', 'Chatbot', 'Web App'],
   },
+  {
+    title: 'Data Analytics Platform',
+    category: 'SaaS Product',
+    description: 'A powerful platform for visualizing and analyzing complex datasets, enabling data-driven decisions.',
+    image: 'https://placehold.co/600x400.png',
+    imageHint: 'data analytics',
+    tags: ['SaaS', 'Data', 'Analytics'],
+  },
 ];
 
 export default function PortfolioPage() {
