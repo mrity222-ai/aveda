@@ -14,8 +14,8 @@ export default function Hero() {
         </p>
       </div>
       <Button asChild size="lg">
-        <Link href="#contact">
-          Start Your Project <ArrowRight className="ml-2 h-5 w-5" />
+        <Link href="/contact">
+          Get In Touch <ArrowRight className="ml-2 h-5 w-5" />
         </Link>
       </Button>
     </section>
