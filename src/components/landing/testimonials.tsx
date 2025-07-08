@@ -4,8 +4,7 @@ import Image from "next/image";
 
 const testimonials = [
   {
-    name: "Satisfied Client",
-    role: "CEO, Tech Solutions",
+    name: "CEO of a Satisfied Client",
     image: "https://placehold.co/100x100.png",
     imageHint: "professional headshot man",
     quote:
@@ -57,9 +56,6 @@ export default function Testimonials() {
                 </blockquote>
                  <footer className="mt-4 text-base font-semibold text-foreground">
                     — {testimonial.name}
-                    {testimonial.role && 
-                        <>, <span className="font-normal text-muted-foreground">{testimonial.role}</span></>
-                    }
                   </footer>
               </CardContent>
             </Card>
