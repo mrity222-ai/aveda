@@ -27,7 +27,7 @@ const tiers = [
     features: [
       "1-50 Users Only",
       "Everything in Starter",
-      "Advanced Sales & Inventory",
+      "CRM & SALES",
       "HR & Payroll Module",
       "Priority Email Support",
     ],
