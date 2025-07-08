@@ -51,6 +51,22 @@ const portfolioItems = [
     imageHint: 'search engine optimization',
     tags: ['SEO', 'Content', 'B2B'],
   },
+  {
+    title: 'Cloud Migration Service',
+    category: 'SaaS Product',
+    description: 'Seamlessly migrated a legacy enterprise system to a modern cloud infrastructure, improving performance and scalability.',
+    image: 'https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageHint: 'cloud infrastructure',
+    tags: ['Cloud', 'Migration', 'SaaS'],
+  },
+  {
+    title: 'AI Chatbot Integration',
+    category: 'Custom Development',
+    description: 'Developed and integrated a custom AI-powered chatbot for a customer support platform, reducing response times by 60%.',
+    image: 'https://images.unsplash.com/photo-1620712943543-2858200e9456?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageHint: 'AI chatbot',
+    tags: ['AI', 'Chatbot', 'Web App'],
+  },
 ];
 
 export default function PortfolioPage() {
@@ -70,9 +86,8 @@ export default function PortfolioPage() {
               <Image
                 src={item.image}
                 alt={item.title}
-                layout="fill"
-                objectFit="cover"
-                className="w-full h-full"
+                fill
+                className="object-cover"
                 data-ai-hint={item.imageHint}
               />
             </div>
