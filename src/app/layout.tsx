@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster"
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'AvedaTech Navigator',
+  title: 'Aveda Technologies Navigator',
   description: 'Innovative Tech Solutions for Your Business',
 };
 

@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="container grid place-items-center gap-10 px-4 py-20 text-center md:py-32">
       <div className="space-y-6">
         <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-          Innovate, Build, and Grow with AvedaTech
+          Innovate, Build, and Grow with Aveda Technologies
         </h1>
         <p className="mx-auto max-w-[700px] text-lg text-foreground/80 md:text-xl">
           Your expert partner in SaaS, custom software, and digital marketing. We turn your vision into reality with cutting-edge technology and strategic insights.
