@@ -11,6 +11,22 @@ const testimonials = [
     quote:
       "Aveda Technologies's SaaS product revolutionized our workflow. It's intuitive, powerful, and has significantly boosted our productivity.",
   },
+  {
+    name: "Jane Doe",
+    role: "Marketing Director, Innovate Inc.",
+    image: "https://placehold.co/100x100.png",
+    imageHint: "professional headshot woman",
+    quote:
+      "The smart analytics feature gave us insights we never knew we were missing. Our campaign ROI has increased by over 50%!",
+  },
+  {
+    name: "John Smith",
+    role: "Operations Manager, Growth Co.",
+    image: "https://placehold.co/100x100.png",
+    imageHint: "professional headshot man",
+    quote:
+      "Automating our workflows saved us countless hours. The platform is a game-changer for operational efficiency.",
+  },
 ];
 
 const StarRating = ({ rating = 5 }: { rating?: number }) => (
@@ -34,13 +50,13 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="grid gap-8 max-w-2xl mx-auto">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial) => (
             <Card
               key={testimonial.name}
-              className="bg-background/80 backdrop-blur-sm p-8 soft-shadow border"
+              className="bg-background/80 backdrop-blur-sm p-8 soft-shadow border h-full flex flex-col"
             >
-              <CardContent className="p-0 flex flex-col items-center text-center">
+              <CardContent className="p-0 flex flex-col items-center text-center flex-grow">
                 <Image
                   src={testimonial.image}
                   alt={testimonial.name}
@@ -50,17 +66,17 @@ export default function Testimonials() {
                   data-ai-hint={testimonial.imageHint}
                 />
                 <StarRating />
-                <blockquote className="mt-4">
+                <blockquote className="mt-4 flex-grow flex flex-col justify-center">
                   <p className="text-lg italic text-foreground/90 z-10 relative">
                     "{testimonial.quote}"
                   </p>
-                  <footer className="mt-4 text-base font-semibold text-foreground">
+                </blockquote>
+                 <footer className="mt-4 text-base font-semibold text-foreground">
                     — {testimonial.name},{" "}
                     <span className="font-normal text-muted-foreground">
                       {testimonial.role}
                     </span>
                   </footer>
-                </blockquote>
               </CardContent>
             </Card>
           ))}

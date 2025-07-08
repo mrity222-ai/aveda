@@ -1,24 +1,20 @@
-import { CloudCog, CodeXml, BarChart3 } from 'lucide-react';
-import Link from 'next/link';
+import { Bot, Settings, BarChart3 } from 'lucide-react';
 
 const services = [
   {
-    icon: CloudCog,
-    title: "SaaS Products",
-    description: "Ready-to-deploy SaaS solutions for performance and reliability.",
-    href: "/saas-products"
-  },
-  {
-    icon: CodeXml,
-    title: "Custom Software",
-    description: "Bespoke software development tailored to your specific needs.",
-    href: "/custom-development"
+    icon: Bot,
+    title: "AI Assistant",
+    description: "Automate tasks and get instant insights with your personal AI assistant.",
   },
   {
     icon: BarChart3,
-    title: "Digital Marketing",
-    description: "Data-driven strategies to amplify your brand and drive growth.",
-    href: "/digital-marketing"
+    title: "Smart Analytics",
+    description: "Visualize your data and uncover trends with our powerful analytics engine.",
+  },
+  {
+    icon: Settings,
+    title: "Automated Workflows",
+    description: "Streamline your business processes with customizable automated workflows.",
   },
 ];
 
@@ -30,7 +26,7 @@ export default function Services() {
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">What We Offer</h2>
             <p className="max-w-3xl text-muted-foreground md:text-xl">
-              We provide a comprehensive suite of services to power your success, from innovative products to strategic marketing.
+              Our platform is engineered to elevate your business operations to the next level.
             </p>
           </div>
         </div>
@@ -38,7 +34,7 @@ export default function Services() {
           {services.map((service) => {
             const Icon = service.icon;
             return (
-              <Link key={service.title} href={service.href} className="group block">
+              <div key={service.title} className="group">
                 <div className="h-full p-8 transform hover:-translate-y-2 transition-transform duration-300 soft-shadow rounded-2xl bg-background/80 backdrop-blur-sm border">
                     <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 text-primary border border-primary/20 transition-all duration-300 group-hover:shadow-[0_0_20px_hsl(var(--primary))]">
                       <Icon className="h-8 w-8" />
@@ -46,7 +42,7 @@ export default function Services() {
                     <h3 className="text-2xl font-bold text-foreground/90">{service.title}</h3>
                     <p className="text-base text-muted-foreground mt-2">{service.description}</p>
                 </div>
-              </Link>
+              </div>
             );
           })}
         </div>
