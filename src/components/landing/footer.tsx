@@ -109,7 +109,7 @@ export default function Footer() {
                  <div className="space-y-4 text-muted-foreground">
                     <div className="flex items-start gap-3">
                         <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                        <span>123 Innovation Drive, Tech City, 12345</span>
+                        <span>Lucknow ,U.P. IN</span>
                     </div>
                     <div className="flex items-start gap-3">
                         <Mail className="h-5 w-5 text-primary mt-1 flex-shrink-0" />

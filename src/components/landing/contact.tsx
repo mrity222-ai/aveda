@@ -67,7 +67,7 @@ export default function Contact() {
                 </div>
                 <div className="flex items-center gap-4">
                     <MapPin className="h-5 w-5 text-primary" />
-                    <span>123 Innovation Drive, Tech City, 12345</span>
+                    <span>Lucknow ,U.P. IN</span>
                 </div>
             </div>
         </div>
