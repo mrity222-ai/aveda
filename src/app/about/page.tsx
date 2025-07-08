@@ -12,18 +12,6 @@ const teamMembers = [
     role: "CTO",
     hint: "professional headshot woman",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  },
-  {
-    name: "Robert Johnson",
-    role: "CFO",
-    hint: "professional headshot man",
-    image: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?q=80&w=1921&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  },
-  {
-    name: "Emily White",
-    role: "Head of Marketing",
-    hint: "professional headshot woman",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ];
 
@@ -66,7 +54,7 @@ export default function AboutPage() {
               We’re a passionate team of developers, designers, and growth experts building the future of AI-powered technology.
             </p>
           </div>
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-16 sm:grid-cols-2 md:max-w-lg mx-auto">
             {teamMembers.map((member) => (
               <div key={member.name} className="text-center flex flex-col items-center">
                 <Image
