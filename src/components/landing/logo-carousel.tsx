@@ -55,7 +55,7 @@ export default function LogoCarousel() {
   );
 
   return (
-    <section className="container py-16 md:py-24 lg:py-32">
+    <section className="container py-12 sm:py-16 md:py-24 lg:py-32">
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center mb-12">
             <h2 className="font-headline text-2xl font-bold text-muted-foreground sm:text-3xl">Trusted by the world&apos;s best companies</h2>
         </div>

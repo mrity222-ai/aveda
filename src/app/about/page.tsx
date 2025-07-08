@@ -30,7 +30,7 @@ export default function AboutPage() {
     <div className="flex min-h-screen w-full flex-col bg-background">
       <Header />
       <main className="flex-1">
-        <section className="container px-4 py-16 md:py-24 lg:py-32">
+        <section className="container px-4 py-12 sm:py-16 md:py-24 lg:py-32">
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div className="space-y-6">
               <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
@@ -56,7 +56,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="bg-secondary py-16 md:py-24 lg:py-32">
+        <section className="bg-secondary py-12 sm:py-16 md:py-24 lg:py-32">
           <div className="container px-4">
             <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center mb-12">
               <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
