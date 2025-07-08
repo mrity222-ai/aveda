@@ -11,7 +11,7 @@ const socialLinks: { href: string; label: string; Icon: LucideIcon }[] = [
     label: "Twitter",
   },
   {
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/company/aveda%E2%84%A2/?viewAsMember=true",
     Icon: Linkedin,
     label: "LinkedIn",
   },
