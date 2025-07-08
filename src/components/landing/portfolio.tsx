@@ -24,10 +24,10 @@ const portfolioItems = [
     hint: "e-commerce website"
   },
   {
-    title: "Project Delta",
-    description: "Custom analytics dashboard for a major digital marketing campaign.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    hint: "analytics dashboard"
+    title: "SEO Optimization",
+    description: "Make your site Google-friendly with smart SEO practices.",
+    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    hint: "seo chart"
   },
 ];
 
