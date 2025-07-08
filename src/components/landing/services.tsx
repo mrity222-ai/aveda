@@ -21,7 +21,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="w-full py-16 md:py-24 bg-secondary/50">
+    <section id="services" className="w-full py-16 md:py-24">
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">

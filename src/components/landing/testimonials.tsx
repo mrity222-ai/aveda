@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function Testimonials() {
   return (
-    <section className="w-full py-16 md:py-24 bg-secondary/50">
+    <section className="w-full py-16 md:py-24">
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
         <div className="mx-auto flex max-w-2xl flex-col items-center space-y-4 text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
