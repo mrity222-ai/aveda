@@ -3,7 +3,6 @@ import { Toaster } from "@/components/ui/toaster"
 import Chatbot from "@/components/chatbot";
 import Header from '@/components/landing/header';
 import Footer from '@/components/landing/footer';
-import LogoCarousel from '@/components/landing/logo-carousel';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -25,7 +24,6 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased flex flex-col min-h-screen bg-background">
         <Header />
-        <LogoCarousel />
         <main className="flex-1 w-full">
           {children}
         </main>
