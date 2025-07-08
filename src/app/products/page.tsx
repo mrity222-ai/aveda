@@ -1,6 +1,4 @@
 
-import Header from '@/components/landing/header';
-import Footer from '@/components/landing/footer';
 import {
   Accordion,
   AccordionContent,
@@ -119,56 +117,50 @@ const erpModules: { title: string; icon: ReactElement; features: { step: number 
 
 export default function ProductsPage() {
   return (
-    <div className="flex min-h-screen w-full flex-col bg-background">
-      <Header />
-      <main className="flex-1">
-        <section className="container max-w-7xl px-4 py-12 sm:py-16 md:py-24 lg:py-32">
-          <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center mb-12">
-            <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Our AI-Powered ERP Suite</h1>
-            <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-              Explore our comprehensive suite of business management tools, supercharged with AI to enhance productivity, forecasting, and decision-making.
-            </p>
-          </div>
+    <section className="container max-w-7xl xl:max-w-screen-xl px-4 py-16">
+      <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center mb-12">
+        <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Our AI-Powered ERP Suite</h1>
+        <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+          Explore our comprehensive suite of business management tools, supercharged with AI to enhance productivity, forecasting, and decision-making.
+        </p>
+      </div>
 
-          <Accordion type="single" collapsible defaultValue="item-0" className="w-full max-w-4xl mx-auto">
-            {erpModules.map((module, index) => (
-              <AccordionItem key={module.title} value={`item-${index}`}>
-                <AccordionTrigger className="text-xl font-headline hover:no-underline">
-                  <div className="flex items-center gap-4">
-                    {module.icon}
-                    <span>{module.title}</span>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent>
-                  <div className="overflow-x-auto">
-                    <Table>
-                      <TableHeader>
-                        <TableRow>
-                          <TableHead className="w-[80px]">Step</TableHead>
-                          <TableHead>Feature</TableHead>
-                          <TableHead>AI Integration</TableHead>
-                        </TableRow>
-                      </TableHeader>
-                      <TableBody>
-                        {module.features.map((feature) => (
-                          <TableRow key={feature.step}>
-                            <TableCell>
-                              <Badge variant="secondary">{feature.step}</Badge>
-                            </TableCell>
-                            <TableCell className="font-medium">{feature.name}</TableCell>
-                            <TableCell className="text-muted-foreground">{feature.ai}</TableCell>
-                          </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </section>
-      </main>
-      <Footer />
-    </div>
+      <Accordion type="single" collapsible defaultValue="item-0" className="w-full max-w-4xl mx-auto">
+        {erpModules.map((module, index) => (
+          <AccordionItem key={module.title} value={`item-${index}`}>
+            <AccordionTrigger className="text-xl font-headline hover:no-underline">
+              <div className="flex items-center gap-4">
+                {module.icon}
+                <span>{module.title}</span>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent>
+              <div className="overflow-x-auto">
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead className="w-[80px]">Step</TableHead>
+                      <TableHead>Feature</TableHead>
+                      <TableHead>AI Integration</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {module.features.map((feature) => (
+                      <TableRow key={feature.step}>
+                        <TableCell>
+                          <Badge variant="secondary">{feature.step}</Badge>
+                        </TableCell>
+                        <TableCell className="font-medium">{feature.name}</TableCell>
+                        <TableCell className="text-muted-foreground">{feature.ai}</TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+    </section>
   );
 }

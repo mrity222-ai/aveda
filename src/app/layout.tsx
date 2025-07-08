@@ -1,6 +1,8 @@
 import type {Metadata} from 'next';
 import { Toaster } from "@/components/ui/toaster"
 import Chatbot from "@/components/chatbot";
+import Header from '@/components/landing/header';
+import Footer from '@/components/landing/footer';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -20,8 +22,12 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased">
-        {children}
+      <body className="font-body antialiased flex flex-col min-h-screen bg-background">
+        <Header />
+        <main className="flex-1 w-full">
+          {children}
+        </main>
+        <Footer />
         <Toaster />
         <Chatbot />
       </body>

@@ -1,5 +1,3 @@
-import Header from '@/components/landing/header';
-import Footer from '@/components/landing/footer';
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
@@ -44,39 +42,33 @@ const portfolioItems = [
 
 export default function PortfolioPage() {
   return (
-    <div className="flex min-h-screen w-full flex-col bg-background">
-      <Header />
-      <main className="flex-1">
-        <section className="container max-w-7xl space-y-12 px-4 py-12 sm:py-16 md:py-20">
-          <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-            <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Our Work</h1>
-            <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-              We take pride in the solutions we've delivered. Explore some of our successful projects and case studies.
-            </p>
-          </div>
-          <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-            {portfolioItems.map((item) => (
-              <Card key={item.title} className="overflow-hidden transition-shadow duration-300 hover:shadow-xl">
-                <CardHeader className="p-0">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    width={600}
-                    height={400}
-                    className="w-full object-cover aspect-[3/2]"
-                    data-ai-hint={item.hint}
-                  />
-                </CardHeader>
-                <CardContent className="p-6">
-                  <CardTitle className="font-headline text-2xl">{item.title}</CardTitle>
-                  <CardDescription className="mt-2 text-lg">{item.description}</CardDescription>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </div>
+    <section className="container max-w-7xl xl:max-w-screen-xl space-y-12 px-4 py-16">
+      <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+        <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Our Work</h1>
+        <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+          We take pride in the solutions we've delivered. Explore some of our successful projects and case studies.
+        </p>
+      </div>
+      <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        {portfolioItems.map((item) => (
+          <Card key={item.title} className="overflow-hidden transition-shadow duration-300 hover:shadow-xl">
+            <CardHeader className="p-0">
+              <Image
+                src={item.image}
+                alt={item.title}
+                width={600}
+                height={400}
+                className="w-full object-cover aspect-[3/2]"
+                data-ai-hint={item.hint}
+              />
+            </CardHeader>
+            <CardContent className="p-6">
+              <CardTitle className="font-headline text-2xl">{item.title}</CardTitle>
+              <CardDescription className="mt-2 text-lg">{item.description}</CardDescription>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </section>
   );
 }

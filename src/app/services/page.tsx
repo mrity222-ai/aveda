@@ -1,6 +1,4 @@
 
-import Header from '@/components/landing/header';
-import Footer from '@/components/landing/footer';
 import { CodeXml, PenTool, CloudCog, BarChart3, Palette, BrainCircuit } from "lucide-react";
 import Image from 'next/image';
 import Link from 'next/link';
@@ -90,58 +88,52 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <div className="flex min-h-screen w-full flex-col bg-background">
-      <Header />
-      <main className="flex-1">
-        <section className="container max-w-7xl px-4 py-12 sm:py-16 md:py-20">
-          <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center mb-16">
-            <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Our Services</h1>
-            <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-              We provide a comprehensive suite of services to power your success, from custom software to strategic AI consulting.
-            </p>
-          </div>
+    <section className="container max-w-7xl xl:max-w-screen-xl px-4 py-16">
+      <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center mb-16">
+        <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Our Services</h1>
+        <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+          We provide a comprehensive suite of services to power your success, from custom software to strategic AI consulting.
+        </p>
+      </div>
 
-          <div className="space-y-24">
-            {services.map((service, index) => (
-              <div key={service.id} id={service.id} className="grid gap-12 md:grid-cols-2 items-center">
-                <div className={index % 2 === 1 ? 'md:order-2' : ''}>
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    width={600}
-                    height={400}
-                    className="rounded-lg object-cover shadow-lg"
-                    data-ai-hint={service.imageHint}
-                  />
-                </div>
-                <div className={index % 2 === 1 ? 'md:order-1' : ''}>
-                    <div className="space-y-6">
-                        <h2 className="font-headline text-3xl font-bold tracking-tight">{service.title}</h2>
-                        <p className="text-lg text-muted-foreground">{service.description}</p>
-                        <div className="space-y-4">
-                            {service.features.map(feature => (
-                                <div key={feature.title} className="flex items-start gap-4">
-                                    {feature.icon}
-                                    <div>
-                                        <h3 className="font-semibold text-lg">{feature.title}</h3>
-                                        <p className="text-muted-foreground">{feature.description}</p>
-                                    </div>
+      <div className="space-y-24">
+        {services.map((service, index) => (
+          <div key={service.id} id={service.id} className="grid gap-12 md:grid-cols-2 items-center">
+            <div className={index % 2 === 1 ? 'md:order-2' : ''}>
+              <Image
+                src={service.image}
+                alt={service.title}
+                width={600}
+                height={400}
+                className="rounded-lg object-cover shadow-lg"
+                data-ai-hint={service.imageHint}
+              />
+            </div>
+            <div className={index % 2 === 1 ? 'md:order-1' : ''}>
+                <div className="space-y-6">
+                    <h2 className="font-headline text-3xl font-bold tracking-tight">{service.title}</h2>
+                    <p className="text-lg text-muted-foreground">{service.description}</p>
+                    <div className="space-y-4">
+                        {service.features.map(feature => (
+                            <div key={feature.title} className="flex items-start gap-4">
+                                {feature.icon}
+                                <div>
+                                    <h3 className="font-semibold text-lg">{feature.title}</h3>
+                                    <p className="text-muted-foreground">{feature.description}</p>
                                 </div>
-                            ))}
-                        </div>
-                        {service.link && (
-                          <Button asChild className="mt-4">
-                            <Link href={service.link}>Learn More</Link>
-                          </Button>
-                        )}
+                            </div>
+                        ))}
                     </div>
+                    {service.link && (
+                      <Button asChild className="mt-4">
+                        <Link href={service.link}>Learn More</Link>
+                      </Button>
+                    )}
                 </div>
-              </div>
-            ))}
+            </div>
           </div>
-        </section>
-      </main>
-      <Footer />
-    </div>
+        ))}
+      </div>
+    </section>
   );
 }
