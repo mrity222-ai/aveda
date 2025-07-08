@@ -1,11 +1,4 @@
 import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-} from "@/components/ui/card";
-import {
   Users,
   ShoppingCart,
   Warehouse,
@@ -92,7 +85,14 @@ const erpModules: { title: string; description: string; icon: ReactElement; feat
 
 export default function SaasProductsPage() {
   return (
-    <section className="max-w-screen-xl mx-auto px-4 py-16">
+    <section className="relative max-w-screen-xl mx-auto px-4 py-16">
+        <div 
+            className="absolute inset-0 -z-10"
+            style={{
+            backgroundImage: 'radial-gradient(circle at 5% 20%, hsl(var(--primary) / 0.1), transparent 50%), radial-gradient(circle at 95% 80%, hsl(var(--secondary) / 0.1), transparent 50%)',
+            }}
+        />
+
       <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center mb-12">
         <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Our AI-Powered ERP Suite</h1>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
@@ -102,30 +102,32 @@ export default function SaasProductsPage() {
 
       <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {erpModules.map((module) => (
-          <Card key={module.title} className="flex flex-col border-2 border-transparent hover:border-primary/50 hover:shadow-lg transition-all duration-300">
-            <CardHeader className="flex flex-row items-start gap-4 pb-4">
-              <div className="bg-primary/10 p-3 rounded-lg">
-                {module.icon}
-              </div>
-              <div>
-                <CardTitle className="font-headline text-xl">{module.title}</CardTitle>
-                <CardDescription className="mt-1">{module.description}</CardDescription>
-              </div>
-            </CardHeader>
-            <CardContent className="flex-1 space-y-4 pt-0">
+          <div key={module.title} className="glass-card p-8 flex flex-col h-full transform hover:-translate-y-2 transition-transform duration-300 soft-shadow">
+            <div className="flex items-start gap-4 mb-6">
+                <div className="flex-shrink-0 bg-white/10 p-4 rounded-xl border border-white/20">
+                    {module.icon}
+                </div>
+                <div>
+                    <h3 className="font-headline text-2xl font-bold text-white">{module.title}</h3>
+                    <p className="text-muted-foreground mt-1">{module.description}</p>
+                </div>
+            </div>
+            
+            <div className="flex-grow mt-auto">
+                <h4 className="font-semibold text-lg mb-4 text-secondary">Key AI Features</h4>
                 <ul className="space-y-3 text-sm">
                 {module.features.map((feature) => (
-                  <li key={feature.name} className="flex items-start gap-3">
-                    <CheckCircle className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                <li key={feature.name} className="flex items-start gap-3">
+                    <CheckCircle className="h-4 w-4 text-secondary mt-1 flex-shrink-0" />
                     <div>
-                      <span className="font-semibold">{feature.name}:</span>
-                      <span className="text-muted-foreground ml-1">{feature.ai}</span>
+                    <span className="font-semibold text-foreground/90">{feature.name}:</span>
+                    <span className="text-muted-foreground ml-1">{feature.ai}</span>
                     </div>
-                  </li>
+                </li>
                 ))}
-              </ul>
-            </CardContent>
-          </Card>
+                </ul>
+            </div>
+          </div>
         ))}
       </div>
     </section>
