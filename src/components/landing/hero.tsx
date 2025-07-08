@@ -5,8 +5,8 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="w-full min-h-[calc(100vh-4rem)] flex items-center py-20 md:py-0">
-      <div className="container mx-auto grid max-w-screen-xl items-center gap-12 px-4 md:grid-cols-2 md:gap-16">
-        <div className="space-y-6 text-center md:text-left">
+      <div className="container mx-auto grid max-w-screen-xl items-center gap-12 px-4 md:grid-cols-5 md:gap-16">
+        <div className="space-y-6 text-center md:text-left md:col-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
             Unlock the Future of Business Intelligence
           </h1>
@@ -19,11 +19,11 @@ export default function Hero() {
             </Button>
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full md:col-span-3">
             <Image
-                src="https://placehold.co/1200x800.png"
+                src="https://placehold.co/1250x800.png"
                 alt="Dashboard Mockup"
-                width={1200}
+                width={1250}
                 height={800}
                 className="w-full h-auto rounded-lg object-cover shadow-2xl border-white/10 bg-card/50 backdrop-blur-sm"
                 data-ai-hint="erp dashboard"
