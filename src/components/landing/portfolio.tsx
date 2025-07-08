@@ -33,7 +33,7 @@ const portfolioItems = [
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="container max-w-7xl xl:max-w-screen-xl space-y-12 px-4 py-16 md:py-24 lg:py-32">
+    <section id="portfolio" className="container max-w-7xl xl:max-w-screen-xl space-y-12 px-4 py-16 md:py-24">
       <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
         <h2 className="font-headline text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">Our Work</h2>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">

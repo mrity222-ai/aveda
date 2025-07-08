@@ -49,7 +49,7 @@ export default function PortfolioPage() {
           We take pride in the solutions we've delivered. Explore some of our successful projects and case studies.
         </p>
       </div>
-      <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
         {portfolioItems.map((item) => (
           <Card key={item.title} className="overflow-hidden transition-shadow duration-300 hover:shadow-xl">
             <CardHeader className="p-0">
