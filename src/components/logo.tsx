@@ -6,7 +6,7 @@ const Logo = ({
   className?: string;
 }) => {
   return (
-    <span className={cn('font-headline text-2xl font-bold text-white', className)}>
+    <span className={cn('font-semibold text-xl text-foreground', className)}>
       Aveda Technologies
     </span>
   );
