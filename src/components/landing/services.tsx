@@ -1,21 +1,21 @@
-import { Users, Warehouse, Briefcase } from 'lucide-react';
+import { CloudCog, CodeXml, BarChart3 } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '../ui/card';
 
 const services = [
   {
-    icon: Users,
-    title: "CRM & Sales",
-    description: "Track leads, close opportunities and get accurate forecasts.",
+    icon: CloudCog,
+    title: "SaaS Products",
+    description: "Ready-to-deploy SaaS solutions for performance and reliability.",
   },
   {
-    icon: Warehouse,
-    title: "Inventory & MRP",
-    description: "Maximize warehouse efficiency, and increase productivity.",
+    icon: CodeXml,
+    title: "Custom Software",
+    description: "Bespoke software development tailored to your specific needs.",
   },
   {
-    icon: Briefcase,
-    title: "HR & Payroll",
-    description: "Manage employees, payroll, and recruitment all in one place.",
+    icon: BarChart3,
+    title: "Digital Marketing",
+    description: "Data-driven strategies to amplify your brand and drive growth.",
   },
 ];
 
@@ -25,9 +25,9 @@ export default function Services() {
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">One App for All Your Needs</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">What We Offer</h2>
             <p className="max-w-3xl text-muted-foreground md:text-xl">
-              No more integrations. No more data silos. Just a single, powerful platform to run your entire business.
+              We provide a comprehensive suite of services to power your success, from innovative products to strategic marketing.
             </p>
           </div>
         </div>
