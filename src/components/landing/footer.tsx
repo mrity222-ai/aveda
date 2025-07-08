@@ -58,7 +58,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             
             <div className="space-y-4 md:col-span-1">
-                <Logo className="h-10" />
+                <Logo />
                 <p className="text-muted-foreground">
                 Building AI-powered SaaS, custom software, and growth solutions for the future.
                 </p>

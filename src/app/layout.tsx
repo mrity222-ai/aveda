@@ -6,7 +6,7 @@ import Footer from '@/components/landing/footer';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Aveda Technologies Navigator',
+  title: 'Aveda Technologies',
   description: 'Innovative Tech Solutions for Your Business',
 };
 
