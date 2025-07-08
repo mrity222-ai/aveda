@@ -25,14 +25,15 @@ const socialLinks = [
 const quickLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
-    { href: "/contact", label: "Contact" },
     { href: "/portfolio", label: "Portfolio" },
+    { href: "/contact", label: "Contact" },
 ];
 
 const serviceLinks = [
-    { href: "/products", label: "SaaS Products" },
-    { href: "/services#custom-software", label: "Custom Software" },
-    { href: "/services#ui-ux-design", label: "UI/UX Design" },
+    { href: "/saas-products", label: "SaaS Products" },
+    { href: "/custom-development", label: "Custom Development" },
+    { href: "/digital-marketing", label: "Digital Marketing" },
+    { href: "/ui-ux-design", label: "UI/UX Design" },
 ];
 
 export default function Footer() {
@@ -42,10 +43,24 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Column 1: Company Branding */}
           <div className="space-y-4">
-            <Logo showTagline={true} className="h-12" />
+            <Logo showTagline={false} className="h-10" />
             <p className="text-muted-foreground pt-2">
               Building AI-powered SaaS, custom software, and growth solutions for the future.
             </p>
+             <div className="flex items-center space-x-1 pt-2">
+              {socialLinks.map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={link.label}
+                  className="rounded-md p-2 text-muted-foreground transition-colors hover:bg-primary/10 hover:text-primary"
+                >
+                  {link.icon}
+                </Link>
+              ))}
+            </div>
           </div>
 
           {/* Column 2: Quick Links */}
@@ -78,34 +93,20 @@ export default function Footer() {
 
           {/* Column 4: Contact Info */}
           <div className="space-y-4">
-            <h4 className="font-headline text-lg font-semibold">Contact Info</h4>
+            <h4 className="font-headline text-lg font-semibold">Contact Us</h4>
             <div className="space-y-3 text-muted-foreground">
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 flex-shrink-0 text-primary" />
-                <span>Lucknow, India</span>
+                <span>123 Innovation Drive, Tech City, 12345</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 flex-shrink-0 text-primary" />
-                <a href="mailto:hello@avedaerp.com" className="break-all transition-colors hover:text-primary hover:underline">hello@avedaerp.com</a>
+                <a href="mailto:contact@avedatech.com" className="break-all transition-colors hover:text-primary hover:underline">contact@avedatech.com</a>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 flex-shrink-0 text-primary" />
-                <span>+91-XXXXXXXXXX</span>
+                <span>+1 (555) 123-4567</span>
               </div>
-            </div>
-             <div className="flex items-center space-x-1 pt-2">
-              {socialLinks.map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={link.label}
-                  className="rounded-md p-2 text-muted-foreground transition-colors hover:bg-primary/10 hover:text-primary"
-                >
-                  {link.icon}
-                </Link>
-              ))}
             </div>
           </div>
         </div>

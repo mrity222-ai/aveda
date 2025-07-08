@@ -10,8 +10,9 @@ import Logo from "@/components/logo";
 
 const navItems = [
   { href: "/about", label: "About Us" },
-  { href: "/products", label: "Products" },
+  { href: "/saas-products", label: "Products" },
   { href: "/services", label: "Services" },
+  { href: "/portfolio", label: "Portfolio" },
   { href: "/contact", label: "Contact" },
 ];
 
