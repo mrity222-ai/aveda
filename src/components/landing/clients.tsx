@@ -7,6 +7,12 @@ const clients = [
   { name: 'Momentum Dynamics', hint: 'dynamic motion logo' },
   { name: 'Pinnacle Group', hint: 'corporate brand logo' },
   { name: 'Nexus Enterprises', hint: 'modern network logo' },
+  { name: 'Innovate AI', hint: 'modern tech logo' },
+  { name: 'Synergy Labs', hint: 'abstract shape logo' },
+  { name: 'Future Forge', hint: 'bold geometric logo' },
+  { name: 'Visionary Ventures', hint: 'minimalist eye logo' },
+  { name: 'Catalyst Co', hint: 'dynamic arrow logo' },
+  { name: 'Horizon Digital', hint: 'simple letter logo' },
 ];
 
 export default function Clients() {
@@ -21,7 +27,7 @@ export default function Clients() {
             We partner with innovative companies to build the future of technology.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-x-8 gap-y-6 items-center">
+        <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-x-8 gap-y-12 items-center">
           {clients.map((client) => (
             <div key={client.name} className="flex justify-center">
               <Image
