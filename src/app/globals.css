@@ -16,11 +16,11 @@ body {
     --popover-foreground: 222 47% 11%;
     --primary: 354 69% 50%; /* Smart Red (#D72638) */
     --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 94%;
+    --secondary: 220 14% 96%; /* Light black (#F3F4F6) */
     --secondary-foreground: 222 47% 11%;
-    --muted: 0 0% 94%;
+    --muted: 220 14% 96%; /* Light black (#F3F4F6) */
     --muted-foreground: 222 47% 45%;
-    --accent: 0 0% 94%;
+    --accent: 220 14% 96%; /* Light black (#F3F4F6) */
     --accent-foreground: 222 47% 11%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
