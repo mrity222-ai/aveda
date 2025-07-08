@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -16,7 +15,7 @@ export default function Hero() {
           </p>
           <div className="flex justify-start gap-4">
             <Button asChild size="lg">
-              <Link href="/contact">Request a Demo <ArrowRight className="ml-2 h-5 w-5" /></Link>
+              <Link href="/contact">Request a Demo</Link>
             </Button>
           </div>
         </div>
