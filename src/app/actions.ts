@@ -1,7 +1,6 @@
 "use server";
 
 import { selectRelevantTestimonial } from "@/ai/flows/select-relevant-testimonial";
-import { askChatbot } from "@/ai/flows/chatbot-flow";
 
 const allTestimonials = [
   "Aveda Technologies's SaaS product revolutionized our workflow. It's intuitive, powerful, and has significantly boosted our productivity.",
@@ -26,19 +25,5 @@ export async function getRelevantTestimonial(service: string) {
   } catch (error) {
     console.error("AI Testimonial Selection Error:", error);
     return { success: false, error: "Failed to get a testimonial. Please try again." };
-  }
-}
-
-export async function handleChatQuery(query: string) {
-  if (!query) {
-    return { success: false, error: "Query cannot be empty." };
-  }
-
-  try {
-    const response = await askChatbot(query);
-    return { success: true, response };
-  } catch (error) {
-    console.error("Chatbot Error:", error);
-    return { success: false, error: "Sorry, I'm having trouble connecting. Please try again later." };
   }
 }

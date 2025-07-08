@@ -1,158 +1,35 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
-import { MessageCircle, Send, X, Bot, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { handleChatQuery } from "@/app/actions";
-import { cn } from "@/lib/utils";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Skeleton } from "@/components/ui/skeleton";
 
-type Message = {
-  role: "user" | "bot";
-  content: string;
-};
+const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    {...props}
+  >
+    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.523.074-.797.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+  </svg>
+);
 
 export default function Chatbot() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [messages, setMessages] = useState<Message[]>([
-    { role: "bot", content: "Hello! How can I help you today?" }
-  ]);
-  const [inputValue, setInputValue] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-  const messagesEndRef = useRef<HTMLDivElement>(null);
-
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  useEffect(() => {
-    scrollToBottom();
-  }, [messages, isLoading]);
-
-  const handleSendMessage = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!inputValue.trim()) return;
-
-    const userMessage: Message = { role: "user", content: inputValue };
-    setMessages((prev) => [...prev, userMessage]);
-    setInputValue("");
-    setIsLoading(true);
-
-    const result = await handleChatQuery(inputValue);
-
-    setIsLoading(false);
-
-    if (result.success) {
-      const botMessage: Message = { role: "bot", content: result.response! };
-      setMessages((prev) => [...prev, botMessage]);
-    } else {
-      const errorMessage: Message = {
-        role: "bot",
-        content: result.error || "An unexpected error occurred.",
-      };
-      setMessages((prev) => [...prev, errorMessage]);
-    }
-  };
+  const phoneNumber = "919012887697";
+  const whatsappUrl = `https://wa.me/${phoneNumber}`;
 
   return (
-    <>
-      <div className="fixed bottom-6 right-6 z-50">
-        <Button
-          size="icon"
-          className="rounded-full w-14 h-14 shadow-lg"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
-          <span className="sr-only">Toggle Chat</span>
-        </Button>
-      </div>
-
-      {isOpen && (
-        <Card className="fixed bottom-24 right-6 z-50 w-full max-w-sm h-[60vh] flex flex-col shadow-xl animate-in fade-in zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2">
-          <CardHeader className="flex flex-row items-center justify-between">
-            <div className="flex items-center gap-3">
-                <Avatar>
-                    <AvatarFallback>
-                        <Bot />
-                    </AvatarFallback>
-                </Avatar>
-                <CardTitle className="text-xl font-headline">AI Assistant</CardTitle>
-            </div>
-          </CardHeader>
-          <CardContent className="flex-1 overflow-hidden p-0">
-            <ScrollArea className="h-full">
-               <div className="p-4 space-y-4">
-                {messages.map((message, index) => (
-                  <div
-                    key={index}
-                    className={cn(
-                      "flex items-start gap-3",
-                      message.role === "user" ? "justify-end" : "justify-start"
-                    )}
-                  >
-                    {message.role === "bot" && (
-                      <Avatar className="h-8 w-8">
-                         <AvatarFallback><Bot /></AvatarFallback>
-                      </Avatar>
-                    )}
-                     <p className={cn(
-                        "max-w-[75%] rounded-lg px-3 py-2 text-sm",
-                        message.role === "user"
-                          ? "bg-primary text-primary-foreground"
-                          : "bg-secondary"
-                      )}>
-                        {message.content}
-                     </p>
-                    {message.role === "user" && (
-                      <Avatar className="h-8 w-8">
-                        <AvatarFallback><User /></AvatarFallback>
-                      </Avatar>
-                    )}
-                  </div>
-                ))}
-                {isLoading && (
-                    <div className="flex items-start gap-3 justify-start">
-                         <Avatar className="h-8 w-8">
-                            <AvatarFallback><Bot /></AvatarFallback>
-                         </Avatar>
-                         <div className="bg-secondary rounded-lg px-3 py-2 space-y-2">
-                            <Skeleton className="h-4 w-10 animate-pulse" />
-                        </div>
-                    </div>
-                )}
-                <div ref={messagesEndRef} />
-               </div>
-            </ScrollArea>
-          </CardContent>
-          <CardFooter className="pt-4 border-t">
-            <form onSubmit={handleSendMessage} className="flex w-full items-center space-x-2">
-              <Input
-                id="message"
-                placeholder="Type your message..."
-                className="flex-1"
-                autoComplete="off"
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
-                disabled={isLoading}
-              />
-              <Button type="submit" size="icon" disabled={isLoading || !inputValue.trim()}>
-                <Send className="h-4 w-4" />
-                <span className="sr-only">Send</span>
-              </Button>
-            </form>
-          </CardFooter>
-        </Card>
-      )}
-    </>
+    <div className="fixed bottom-6 right-6 z-50">
+      <Button
+        asChild
+        size="icon"
+        className="rounded-full w-14 h-14 shadow-lg bg-[#25D366] hover:bg-[#1DA851] text-white"
+        aria-label="Chat on WhatsApp"
+      >
+        <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+          <WhatsAppIcon className="h-7 w-7" />
+          <span className="sr-only">Chat on WhatsApp</span>
+        </a>
+      </Button>
+    </div>
   );
 }
