@@ -18,15 +18,15 @@ export default function Hero() {
           Your browser does not support the video tag.
         </video>
         {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-white/60"></div>
       </div>
       
-      <div className="container relative z-10 grid place-items-center gap-10 px-4 py-20 text-center text-white md:py-32">
+      <div className="container relative z-10 grid place-items-center gap-10 px-4 py-20 text-center text-foreground md:py-32">
         <div className="space-y-6">
           <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
             Innovate, Build, and Grow with Aveda Technologies
           </h1>
-          <p className="mx-auto max-w-[700px] text-lg text-white/80 md:text-xl">
+          <p className="mx-auto max-w-[700px] text-lg text-foreground/80 md:text-xl">
             Your expert partner in SaaS, custom software, and digital marketing. We turn your vision into reality with cutting-edge technology and strategic insights.
           </p>
         </div>
