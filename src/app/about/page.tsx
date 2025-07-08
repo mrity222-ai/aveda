@@ -2,6 +2,29 @@ import Header from '@/components/landing/header';
 import Footer from '@/components/landing/footer';
 import Image from 'next/image';
 
+const teamMembers = [
+  {
+    name: "John Doe",
+    role: "CEO",
+    hint: "professional headshot man"
+  },
+  {
+    name: "Jane Smith",
+    role: "CTO",
+    hint: "professional headshot woman"
+  },
+  {
+    name: "Robert Johnson",
+    role: "CFO",
+    hint: "professional headshot man"
+  },
+  {
+    name: "Emily White",
+    role: "Head of Marketing",
+    hint: "professional headshot woman"
+  }
+];
+
 export default function AboutPage() {
   return (
     <div className="flex min-h-screen w-full flex-col bg-background">
@@ -29,6 +52,35 @@ export default function AboutPage() {
                 className="rounded-lg object-cover shadow-lg"
                 data-ai-hint="team meeting"
               />
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-secondary py-16 md:py-24 lg:py-32">
+          <div className="container px-4">
+            <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center mb-12">
+              <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Meet Our Team
+              </h2>
+              <p className="max-w-3xl text-lg text-muted-foreground md:text-xl">
+                We’re a passionate team of developers, designers, and growth experts building the future of AI-powered technology.
+              </p>
+            </div>
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+              {teamMembers.map((member) => (
+                <div key={member.name} className="text-center flex flex-col items-center">
+                  <Image
+                    src="https://placehold.co/400x400.png"
+                    alt={`Photo of ${member.name}`}
+                    width={150}
+                    height={150}
+                    className="rounded-full object-cover mb-4 shadow-md"
+                    data-ai-hint={member.hint}
+                  />
+                  <h3 className="font-headline text-xl font-semibold">{member.name}</h3>
+                  <p className="text-primary font-medium">{member.role}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
