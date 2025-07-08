@@ -1,4 +1,5 @@
 
+import Image from 'next/image';
 import {
   Accordion,
   AccordionContent,
@@ -123,6 +124,17 @@ export default function ProductsPage() {
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
           Explore our comprehensive suite of business management tools, supercharged with AI to enhance productivity, forecasting, and decision-making.
         </p>
+      </div>
+
+      <div className="mb-12 flex justify-center">
+        <Image
+          src="https://placehold.co/800x400.png"
+          alt="SaaS Products"
+          width={800}
+          height={400}
+          className="w-full max-w-4xl h-auto rounded-lg object-cover shadow-lg"
+          data-ai-hint="SaaS cloud"
+        />
       </div>
 
       <Accordion type="single" collapsible defaultValue="item-0" className="w-full max-w-4xl mx-auto">
