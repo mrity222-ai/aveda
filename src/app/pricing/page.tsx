@@ -9,6 +9,7 @@ const tiers = [
     priceSuffix: "/month",
     description: "For small teams just getting started.",
     features: [
+      "1-15 Users Only",
       "AI-Powered Insights",
       "Basic CRM Module",
       "Project & Task Management",
