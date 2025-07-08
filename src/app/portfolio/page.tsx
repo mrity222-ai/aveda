@@ -3,12 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 
 const portfolioItems = [
   {
-    title: "Maintenance & Support",
-    description: "Ongoing care to keep your site running smoothly.",
-    image: "https://images.unsplash.com/photo-1593455385319-a81d1733a4ce?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    hint: "website maintenance"
-  },
-  {
     title: "UI/UX Design",
     description: "Intuitive designs with Figma, built for real users and real business goals.",
     image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",

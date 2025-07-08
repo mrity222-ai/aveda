@@ -6,12 +6,6 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 
 const portfolioItems = [
   {
-    title: "Maintenance & Support",
-    description: "Ongoing care to keep your site running smoothly.",
-    image: "https://images.unsplash.com/photo-1593455385319-a81d1733a4ce?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    hint: "website maintenance"
-  },
-  {
     title: "UI/UX Design",
     description: "Intuitive designs with Figma, built for real users and real business goals.",
     image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -28,6 +22,12 @@ const portfolioItems = [
     description: "Make your site Google-friendly with smart SEO practices.",
     image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     hint: "seo chart"
+  },
+  {
+    title: "Website Design & Development",
+    description: "Fully responsive, fast, and modern websites using HTML, Tailwind, React, or WordPress.",
+    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    hint: "website design"
   },
 ];
 
