@@ -44,13 +44,13 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-secondary py-16">
+      <section className="bg-primary py-16 text-primary-foreground">
         <div className="max-w-screen-xl mx-auto px-4">
           <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center mb-12">
             <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
               Meet Our Team
             </h2>
-            <p className="max-w-3xl text-lg text-muted-foreground md:text-xl">
+            <p className="max-w-3xl text-lg text-primary-foreground/80 md:text-xl">
               We’re a passionate team of developers, designers, and growth experts building the future of AI-powered technology.
             </p>
           </div>
@@ -66,7 +66,7 @@ export default function AboutPage() {
                   data-ai-hint={member.hint}
                 />
                 <h3 className="font-headline text-xl font-semibold">{member.name}</h3>
-                <p className="text-primary font-medium">{member.role}</p>
+                <p className="text-primary-foreground/90 font-medium">{member.role}</p>
               </div>
             ))}
           </div>
