@@ -1,18 +1,18 @@
 import Image from 'next/image';
 
 const clients = [
-  { name: 'Apex Inc.', hint: 'minimalist logo' },
-  { name: 'Stellar Solutions', hint: 'tech company logo' },
-  { name: 'Quantum Corp', hint: 'abstract geometric logo' },
-  { name: 'Momentum Dynamics', hint: 'dynamic motion logo' },
-  { name: 'Pinnacle Group', hint: 'corporate brand logo' },
-  { name: 'Nexus Enterprises', hint: 'modern network logo' },
-  { name: 'Innovate AI', hint: 'modern tech logo' },
-  { name: 'Synergy Labs', hint: 'abstract shape logo' },
-  { name: 'Future Forge', hint: 'bold geometric logo' },
-  { name: 'Visionary Ventures', hint: 'minimalist eye logo' },
-  { name: 'Catalyst Co', hint: 'dynamic arrow logo' },
-  { name: 'Horizon Digital', hint: 'simple letter logo' },
+  { name: 'Apex Inc.', hint: 'minimalist logo', color: '3498db' },
+  { name: 'Stellar Solutions', hint: 'tech company logo', color: '2ecc71' },
+  { name: 'Quantum Corp', hint: 'abstract geometric logo', color: 'e74c3c' },
+  { name: 'Momentum Dynamics', hint: 'dynamic motion logo', color: 'f1c40f' },
+  { name: 'Pinnacle Group', hint: 'corporate brand logo', color: '9b59b6' },
+  { name: 'Nexus Enterprises', hint: 'modern network logo', color: '1abc9c' },
+  { name: 'Innovate AI', hint: 'modern tech logo', color: 'd35400' },
+  { name: 'Synergy Labs', hint: 'abstract shape logo', color: '2980b9' },
+  { name: 'Future Forge', hint: 'bold geometric logo', color: '27ae60' },
+  { name: 'Visionary Ventures', hint: 'minimalist eye logo', color: 'c0392b' },
+  { name: 'Catalyst Co', hint: 'dynamic arrow logo', color: 'f39c12' },
+  { name: 'Horizon Digital', hint: 'simple letter logo', color: '8e44ad' },
 ];
 
 export default function Clients() {
@@ -31,7 +31,7 @@ export default function Clients() {
           {clients.map((client) => (
             <div key={client.name} className="flex justify-center">
               <Image
-                src="https://placehold.co/150x50.png"
+                src={`https://placehold.co/150x50/${client.color}/ffffff.png`}
                 alt={`${client.name} Logo`}
                 width={150}
                 height={50}
