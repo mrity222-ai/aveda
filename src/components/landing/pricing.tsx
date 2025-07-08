@@ -23,7 +23,7 @@ const tiers = [
       "Smart Analytics",
       "Automated Workflows",
     ],
-    cta: "Choose Pro",
+    cta: "Get Started",
     href: "/contact",
     popular: true,
   },
@@ -47,18 +47,18 @@ export default function Pricing() {
     <section id="pricing" className="max-w-screen-xl mx-auto px-4 py-16 md:py-24">
       <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center mb-12">
         <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-          Flexible Pricing for Teams of All Sizes
+          Plans begin at ₹499/month
         </h2>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-          Choose a plan that fits your needs and unlock the power of AI.
+          Affordable, Scalable & Powered by AI
         </p>
       </div>
       <div className="grid gap-8 sm:grid-cols-1 lg:grid-cols-3">
         {tiers.map((tier) => (
           <Card
             key={tier.name}
-            className={`p-8 flex flex-col h-full transform hover:-translate-y-2 transition-transform duration-300 relative ${
-              tier.popular ? "border-primary border-2" : ""
+            className={`p-8 flex flex-col h-full relative bg-card backdrop-blur-none shadow-2xl ${
+              tier.popular ? "border-primary border-2" : "border-border"
             }`}
           >
             {tier.popular && (
@@ -90,7 +90,7 @@ export default function Pricing() {
                 </li>
               ))}
             </ul>
-            <Button asChild size="lg" className="w-full mt-8">
+            <Button asChild size="lg" className="w-full mt-8" variant={tier.popular ? "default" : "outline"}>
               <Link href={tier.href}>{tier.cta}</Link>
             </Button>
           </Card>

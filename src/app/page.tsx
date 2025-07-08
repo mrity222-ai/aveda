@@ -2,13 +2,13 @@ import Hero from "@/components/landing/hero";
 import Services from "@/components/landing/services";
 import Testimonials from "@/components/landing/testimonials";
 import CTA from "@/components/landing/cta";
-import PricingBanner from "@/components/landing/pricing-banner";
+import Pricing from "@/components/landing/pricing";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <PricingBanner />
+      <Pricing />
       <Services />
       <Testimonials />
       <CTA />
