@@ -4,7 +4,6 @@ import Services from '@/components/landing/services';
 import LogoCarousel from '@/components/landing/logo-carousel';
 import Testimonials from '@/components/landing/testimonials';
 import Footer from '@/components/landing/footer';
-import Portfolio from '@/components/landing/portfolio';
 
 export default function Home() {
   return (
@@ -13,7 +12,6 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <Services />
-        <Portfolio />
         <Testimonials />
         <LogoCarousel />
       </main>
