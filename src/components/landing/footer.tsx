@@ -29,10 +29,8 @@ const quickLinks = [
 
 const serviceLinks = [
     { href: "/products", label: "SaaS Products" },
-    { href: "/custom-development", label: "Custom Development" },
-    { href: "/digital-marketing", label: "Digital Marketing" },
-    { href: "/services", label: "GPT Integration" },
-    { href: "/digital-marketing", label: "SEO & Branding" },
+    { href: "/services#custom-development", label: "Custom Development" },
+    { href: "/services#digital-marketing", label: "Digital Marketing" },
 ];
 
 export default function Footer() {
