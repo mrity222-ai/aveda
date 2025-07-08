@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -9,17 +8,14 @@ export default function Hero() {
       <div className="container mx-auto flex max-w-screen-xl flex-col items-center gap-12 px-4 text-center">
         <div className="space-y-6">
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
-            The Only Software You Need to Run Your Business
+            Unlock the Future of Business Intelligence
           </h1>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground md:text-xl">
-            A modern and intuitive platform to manage your CRM, Sales, Inventory, and HR. All in one place, with the power of AI to boost your productivity.
+            Harness the power of AI with our next-generation SaaS platform. Streamline operations, unlock insights, and drive unprecedented growth with a futuristic ERP designed for visionaries.
           </p>
           <div className="flex justify-center gap-4">
             <Button asChild size="lg">
-              <Link href="/contact">Request a Demo <ArrowRight className="ml-2" /></Link>
-            </Button>
-             <Button asChild size="lg" variant="outline">
-              <Link href="/pricing">See Pricing</Link>
+              <Link href="/contact">Request a Demo</Link>
             </Button>
           </div>
         </div>
