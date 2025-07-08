@@ -24,6 +24,7 @@ const tiers = [
     priceSuffix: "/month",
     description: "For growing businesses that need more power.",
     features: [
+      "1-50 Users Only",
       "Everything in Starter",
       "Advanced Sales & Inventory",
       "HR & Payroll Module",
