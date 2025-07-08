@@ -8,10 +8,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const navItems = [
   { href: "/about", label: "About Us" },
-  { href: "/saas-products", label: "SaaS" },
-  { href: "/custom-development", label: "Development" },
-  { href: "/digital-marketing", label: "Marketing" },
-  { href: "/portfolio", label: "Portfolio" },
+  { href: "/products", label: "Products" },
+  { href: "/services", label: "Services" },
   { href: "/contact", label: "Contact" },
 ];
 
