@@ -62,7 +62,7 @@ export default function AboutPage() {
                   alt={`Photo of ${member.name}`}
                   width={150}
                   height={150}
-                  className="rounded-full object-cover mb-4 shadow-md"
+                  className="w-[150px] h-[150px] rounded-full object-cover mb-4 shadow-md"
                   data-ai-hint={member.hint}
                 />
                 <h3 className="font-headline text-xl font-semibold">{member.name}</h3>
