@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import Link from "next/link";
+import { Card } from "../ui/card";
 
 const tiers = [
   {
@@ -54,9 +55,9 @@ export default function Pricing() {
       </div>
       <div className="grid gap-8 sm:grid-cols-1 lg:grid-cols-3">
         {tiers.map((tier) => (
-          <div
+          <Card
             key={tier.name}
-            className={`glass-card p-8 flex flex-col h-full transform hover:-translate-y-2 transition-transform duration-300 soft-shadow rounded-2xl relative ${
+            className={`p-8 flex flex-col h-full transform hover:-translate-y-2 transition-transform duration-300 relative ${
               tier.popular ? "border-primary border-2" : ""
             }`}
           >
@@ -92,7 +93,7 @@ export default function Pricing() {
             <Button asChild size="lg" className="w-full mt-8">
               <Link href={tier.href}>{tier.cta}</Link>
             </Button>
-          </div>
+          </Card>
         ))}
       </div>
     </section>

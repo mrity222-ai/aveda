@@ -9,6 +9,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import type { ReactElement } from 'react';
+import { Card } from "@/components/ui/card";
 
 const erpModules: { title: string; description: string; icon: ReactElement; features: { name: string; ai: string; }[] }[] = [
     {
@@ -86,13 +87,6 @@ const erpModules: { title: string; description: string; icon: ReactElement; feat
 export default function SaasProductsPage() {
   return (
     <section className="relative max-w-screen-xl mx-auto px-4 py-16">
-        <div 
-            className="absolute inset-0 -z-10"
-            style={{
-            backgroundImage: 'radial-gradient(circle at 5% 20%, hsl(var(--primary) / 0.1), transparent 50%), radial-gradient(circle at 95% 80%, hsl(262 83% 58% / 0.1), transparent 50%)',
-            }}
-        />
-
       <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center mb-12">
         <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Our AI-Powered ERP Suite</h1>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
@@ -102,7 +96,7 @@ export default function SaasProductsPage() {
 
       <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {erpModules.map((module) => (
-          <div key={module.title} className="glass-card p-8 flex flex-col h-full transform hover:-translate-y-2 transition-transform duration-300 soft-shadow">
+          <Card key={module.title} className="p-8 flex flex-col h-full transform hover:-translate-y-2 transition-transform duration-300">
             <div className="flex items-start gap-4 mb-6">
                 <div className="flex-shrink-0 bg-white/10 p-4 rounded-xl border border-white/20">
                     {module.icon}
@@ -127,7 +121,7 @@ export default function SaasProductsPage() {
                 ))}
                 </ul>
             </div>
-          </div>
+          </Card>
         ))}
       </div>
     </section>

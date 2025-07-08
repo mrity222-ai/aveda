@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import Link from "next/link";
+import { Card } from "../ui/card";
 
 export default function PricingBanner() {
   return (
     <section className="w-full py-16 md:py-24">
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
-        <div className="glass-card soft-shadow p-8 md:p-12 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-8">
+        <Card className="p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex items-center gap-6">
             <div className="hidden md:flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 border border-primary/20">
                 <Sparkles className="h-8 w-8 text-primary" />
@@ -21,11 +22,11 @@ export default function PricingBanner() {
             </div>
           </div>
           <Button asChild size="lg" className="flex-shrink-0">
-            <Link href="/pricing">
+            <Link href="/contact">
               View Pricing <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>
-        </div>
+        </Card>
       </div>
     </section>
   );
