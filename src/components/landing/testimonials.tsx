@@ -6,7 +6,7 @@ export default function Testimonials() {
   const staticTestimonial = "Aveda Technologies's SaaS product revolutionized our workflow. It's intuitive, powerful, and has significantly boosted our productivity.";
 
   return (
-    <section className="w-full py-16 md:py-24 bg-background">
+    <section className="w-full py-16 md:py-24">
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
         <div className="mx-auto flex max-w-2xl flex-col items-center space-y-4 text-center mb-10">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">What Our Clients Say</h2>
@@ -16,19 +16,17 @@ export default function Testimonials() {
         </div>
 
         <div className="mx-auto max-w-3xl">
-          <Card className="p-6 bg-card border-none shadow-md">
-            <CardContent className="p-0">
-              <blockquote className="relative">
-                <Quote className="absolute -top-4 -left-4 h-10 w-10 text-primary/10" />
-                <p className="text-lg italic text-foreground/80">
-                  "{staticTestimonial}"
-                </p>
-                 <footer className="mt-4 text-right text-sm font-semibold text-foreground">
-                    — CEO of a Satisfied Client
-                </footer>
-              </blockquote>
-            </CardContent>
-          </Card>
+          <div className="glass-card p-8 soft-shadow">
+            <blockquote className="relative">
+              <Quote className="absolute -top-6 -left-6 h-12 w-12 text-primary/20 drop-shadow-lg" />
+              <p className="text-lg italic text-foreground/80 z-10 relative">
+                "{staticTestimonial}"
+              </p>
+               <footer className="mt-4 text-right text-sm font-semibold text-foreground">
+                  — CEO of a Satisfied Client
+              </footer>
+            </blockquote>
+          </div>
         </div>
       </div>
     </section>

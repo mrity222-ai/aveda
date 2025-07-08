@@ -89,7 +89,7 @@ export default function SaasProductsPage() {
         <div 
             className="absolute inset-0 -z-10"
             style={{
-            backgroundImage: 'radial-gradient(circle at 5% 20%, hsl(var(--primary) / 0.1), transparent 50%), radial-gradient(circle at 95% 80%, hsl(var(--secondary) / 0.1), transparent 50%)',
+            backgroundImage: 'radial-gradient(circle at 5% 20%, hsl(var(--primary) / 0.1), transparent 50%), radial-gradient(circle at 95% 80%, hsl(262 83% 58% / 0.1), transparent 50%)',
             }}
         />
 
@@ -114,11 +114,11 @@ export default function SaasProductsPage() {
             </div>
             
             <div className="flex-grow mt-auto">
-                <h4 className="font-semibold text-lg mb-4 text-secondary">Key AI Features</h4>
+                <h4 className="font-semibold text-lg mb-4 text-primary">Key AI Features</h4>
                 <ul className="space-y-3 text-sm">
                 {module.features.map((feature) => (
                 <li key={feature.name} className="flex items-start gap-3">
-                    <CheckCircle className="h-4 w-4 text-secondary mt-1 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
                     <div>
                     <span className="font-semibold text-foreground/90">{feature.name}:</span>
                     <span className="text-muted-foreground ml-1">{feature.ai}</span>

@@ -29,7 +29,7 @@ const serviceLinks = [
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-background border-t">
+    <footer className="w-full bg-transparent border-t border-white/10 mt-24">
       <div className="container max-w-screen-xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4 md:col-span-1">
@@ -66,24 +66,24 @@ export default function Footer() {
             </div>
              <div>
                 <h3 className="text-sm font-semibold text-foreground mb-4">Connect</h3>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-2">
                     {socialLinks.map(({ href, label, Icon }) => (
                         <Link
-                        key={label}
-                        href={href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={label}
-                        className="text-muted-foreground hover:text-primary transition-colors"
+                          key={label}
+                          href={href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={label}
+                          className="text-muted-foreground hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_8px_hsl(var(--primary))] hover:scale-110 p-2 bg-white/5 rounded-full"
                         >
-                        <Icon className="h-5 w-5" />
+                          <Icon className="h-5 w-5" />
                         </Link>
                     ))}
                 </div>
             </div>
         </div>
         
-        <div className="mt-12 pt-8 border-t text-sm text-muted-foreground flex justify-between items-center">
+        <div className="mt-12 pt-8 border-t border-white/10 text-sm text-muted-foreground flex justify-between items-center">
           <span>© {new Date().getFullYear()} Aveda Technologies. All rights reserved.</span>
         </div>
       </div>

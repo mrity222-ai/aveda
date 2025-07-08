@@ -1,6 +1,5 @@
 import { CloudCog, CodeXml, BarChart3 } from 'lucide-react';
 import Link from 'next/link';
-import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
 const services = [
   {
@@ -25,7 +24,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="features" className="w-full py-16 md:py-24 bg-secondary/50">
+    <section id="features" className="w-full py-16 md:py-24">
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
@@ -39,16 +38,14 @@ export default function Services() {
           {services.map((service) => {
             const Icon = service.icon;
             return (
-              <Link key={service.title} href={service.href}>
-                <Card className="h-full hover:shadow-lg transition-shadow duration-300">
-                    <CardHeader>
-                       <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                          <Icon className="h-6 w-6" />
-                        </div>
-                        <CardTitle className="text-2xl font-bold">{service.title}</CardTitle>
-                        <CardDescription className="text-base">{service.description}</CardDescription>
-                    </CardHeader>
-                </Card>
+              <Link key={service.title} href={service.href} className="block group">
+                <div className="glass-card h-full p-8 transform hover:-translate-y-2 transition-transform duration-300 soft-shadow">
+                    <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary border border-primary/20 transition-all duration-300 group-hover:shadow-[0_0_20px_hsl(var(--primary))]">
+                      <Icon className="h-7 w-7" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-white/90">{service.title}</h3>
+                    <p className="text-base text-muted-foreground mt-2">{service.description}</p>
+                </div>
               </Link>
             );
           })}
