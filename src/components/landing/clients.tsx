@@ -1,18 +1,10 @@
 import Image from 'next/image';
 
 const clients = [
-  { name: 'Apex Inc.', hint: 'minimalist logo', color: '3498db' },
-  { name: 'Stellar Solutions', hint: 'tech company logo', color: '2ecc71' },
-  { name: 'Quantum Corp', hint: 'abstract geometric logo', color: 'e74c3c' },
-  { name: 'Momentum Dynamics', hint: 'dynamic motion logo', color: 'f1c40f' },
-  { name: 'Pinnacle Group', hint: 'corporate brand logo', color: '9b59b6' },
-  { name: 'Nexus Enterprises', hint: 'modern network logo', color: '1abc9c' },
-  { name: 'Innovate AI', hint: 'modern tech logo', color: 'd35400' },
-  { name: 'Synergy Labs', hint: 'abstract shape logo', color: '2980b9' },
-  { name: 'Future Forge', hint: 'bold geometric logo', color: '27ae60' },
-  { name: 'Visionary Ventures', hint: 'minimalist eye logo', color: 'c0392b' },
-  { name: 'Catalyst Co', hint: 'dynamic arrow logo', color: 'f39c12' },
-  { name: 'Horizon Digital', hint: 'simple letter logo', color: '8e44ad' },
+  { name: 'Apex Inc.', hint: 'minimalist logo', image: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { name: 'Stellar Solutions', hint: 'tech company logo', image: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { name: 'Quantum Corp', hint: 'abstract geometric logo', image: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { name: 'Momentum Dynamics', hint: 'dynamic motion logo', image: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
 ];
 
 export default function Clients() {
@@ -27,11 +19,11 @@ export default function Clients() {
             We partner with innovative companies to build the future of technology.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-x-8 gap-y-12 items-center">
+        <div className="mt-12 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12 items-center">
           {clients.map((client) => (
             <div key={client.name} className="flex justify-center">
               <Image
-                src={`https://placehold.co/150x50/${client.color}/ffffff.png`}
+                src={client.image}
                 alt={`${client.name} Logo`}
                 width={150}
                 height={50}
