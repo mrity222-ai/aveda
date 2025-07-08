@@ -1,20 +1,20 @@
-import { Bot, Settings, BarChart3 } from 'lucide-react';
+import { CloudCog, CodeXml, BarChart3 } from 'lucide-react';
 
 const services = [
   {
-    icon: Bot,
-    title: "AI Assistant",
-    description: "Automate tasks and get instant insights with your personal AI assistant.",
+    icon: CloudCog,
+    title: "SaaS Products",
+    description: "Ready-to-deploy SaaS solutions for performance and reliability.",
+  },
+  {
+    icon: CodeXml,
+    title: "Custom Software",
+    description: "Bespoke software development tailored to your specific needs.",
   },
   {
     icon: BarChart3,
-    title: "Smart Analytics",
-    description: "Visualize your data and uncover trends with our powerful analytics engine.",
-  },
-  {
-    icon: Settings,
-    title: "Automated Workflows",
-    description: "Streamline your business processes with customizable automated workflows.",
+    title: "Digital Marketing",
+    description: "Data-driven strategies to amplify your brand and drive growth.",
   },
 ];
 
@@ -26,7 +26,7 @@ export default function Services() {
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">What We Offer</h2>
             <p className="max-w-3xl text-muted-foreground md:text-xl">
-              Our platform is engineered to elevate your business operations to the next level.
+              We provide a comprehensive suite of services to power your success, from innovative products to strategic marketing.
             </p>
           </div>
         </div>
