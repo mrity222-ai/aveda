@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="max-w-screen-xl mx-auto relative z-10 grid items-center gap-12 px-4 py-20 text-center text-primary-foreground md:py-32">
         <div className="space-y-6">
           <h1 className="font-headline text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl">
-            Future-Proof Your Business
+            AI-Driven Growth for Modern Businesses
           </h1>
           <p className="mx-auto max-w-3xl text-lg text-foreground/80 md:text-xl">
             Aveda Technologies provides cutting-edge SaaS solutions that merge AI, automation, and intuitive design to propel your business forward.
