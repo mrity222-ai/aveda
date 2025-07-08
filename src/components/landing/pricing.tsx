@@ -56,9 +56,9 @@ export default function Pricing() {
         {tiers.map((tier) => (
           <div
             key={tier.name}
-            className={`relative p-8 flex flex-col h-full transform hover:-translate-y-2 transition-transform duration-300 soft-shadow rounded-2xl border ${
-              tier.popular ? "border-primary" : "border-border"
-            } bg-background/80 backdrop-blur-sm`}
+            className={`glass-card p-8 flex flex-col h-full transform hover:-translate-y-2 transition-transform duration-300 soft-shadow rounded-2xl relative ${
+              tier.popular ? "border-primary border-2" : ""
+            }`}
           >
             {tier.popular && (
               <div className="absolute top-0 -translate-y-1/2 w-full flex justify-center">

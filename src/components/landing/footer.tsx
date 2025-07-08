@@ -30,7 +30,7 @@ const serviceLinks = [
 
 export default function Footer() {
   return (
-    <footer className="dark w-full bg-background border-t border-border mt-24">
+    <footer className="w-full bg-background border-t border-border mt-24">
       <div className="container max-w-screen-xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4 md:col-span-1">
@@ -75,7 +75,7 @@ export default function Footer() {
                           target="_blank"
                           rel="noopener noreferrer"
                           aria-label={label}
-                          className="text-muted-foreground hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_8px_hsl(var(--primary))] hover:scale-110 p-2 bg-white/5 rounded-full"
+                          className="text-muted-foreground hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_8px_hsl(var(--primary))] hover:scale-110 p-2 bg-secondary rounded-full"
                         >
                           <Icon className="h-5 w-5" />
                         </Link>
@@ -84,7 +84,7 @@ export default function Footer() {
             </div>
         </div>
         
-        <div className="mt-12 pt-8 border-t border-white/10 text-sm text-muted-foreground flex justify-between items-center">
+        <div className="mt-12 pt-8 border-t border-border/50 text-sm text-muted-foreground flex justify-between items-center">
           <span>© {new Date().getFullYear()} Aveda Technologies. All rights reserved.</span>
         </div>
       </div>

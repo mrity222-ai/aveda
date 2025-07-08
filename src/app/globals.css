@@ -60,7 +60,7 @@
 
 @layer components {
   .glass-card {
-    @apply bg-black/5 backdrop-blur-lg rounded-2xl border border-black/10 shadow-lg;
+    @apply bg-white/30 backdrop-blur-lg rounded-2xl border border-white/20 shadow-lg;
   }
 
   .soft-shadow {
