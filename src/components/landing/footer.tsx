@@ -44,7 +44,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Column 1: Company Branding */}
           <div className="space-y-4">
-            <Logo showTagline={false} className="h-10" />
+            <Logo className="h-10" />
             <p className="text-muted-foreground pt-2">
               Building AI-powered SaaS, custom software, and growth solutions for the future.
             </p>
