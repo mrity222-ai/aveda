@@ -4,31 +4,31 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="w-full min-h-[calc(100vh-4rem)] flex items-center py-20 md:py-0">
-      <div className="container mx-auto grid max-w-screen-xl items-center gap-12 px-4 md:grid-cols-5 md:gap-16">
-        <div className="space-y-6 text-center md:text-left md:col-span-2">
-          <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
+    <section className="relative w-full h-[calc(100vh-4rem)] flex items-center justify-center text-center">
+      <div className="absolute inset-0">
+        <Image
+          src="https://placehold.co/1920x1080.png"
+          alt="Dashboard Mockup"
+          fill
+          className="object-cover"
+          data-ai-hint="erp dashboard"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60" />
+      </div>
+      <div className="relative z-10 container mx-auto px-4 max-w-4xl">
+        <div className="space-y-6">
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
             Unlock the Future of Business Intelligence
           </h1>
-          <p className="mx-auto max-w-2xl text-lg text-muted-foreground md:mx-0 md:text-xl">
+          <p className="mx-auto max-w-3xl text-lg text-white/80 md:text-xl">
             Harness the power of AI with our next-generation SaaS platform. Streamline operations, unlock insights, and drive unprecedented growth with a futuristic ERP designed for visionaries.
           </p>
-          <div className="flex justify-center gap-4 md:justify-start">
+          <div className="flex justify-center gap-4">
             <Button asChild size="lg">
               <Link href="/contact">Request a Demo</Link>
             </Button>
           </div>
-        </div>
-        <div className="w-full md:col-span-3">
-            <Image
-                src="https://placehold.co/1250x800.png"
-                alt="Dashboard Mockup"
-                width={1250}
-                height={800}
-                className="w-full h-auto rounded-lg object-cover shadow-2xl border-white/10 bg-card/50 backdrop-blur-sm"
-                data-ai-hint="erp dashboard"
-                priority
-            />
         </div>
       </div>
     </section>
