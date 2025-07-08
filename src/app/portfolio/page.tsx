@@ -33,10 +33,10 @@ const portfolioItems = [
     hint: "api development"
   },
   {
-    title: "Project Zeta",
-    description: "A complete re-branding and digital marketing campaign for a retail client.",
-    image: "https://images.unsplash.com/photo-1491933382434-500287f9b54b?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    hint: "digital marketing"
+    title: "Logo Design",
+    description: "Crafting a memorable brand identity for a modern tech startup.",
+    image: "https://images.unsplash.com/photo-1558655146-364adaf1fcc9?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    hint: "brand design"
   }
 ];
 
