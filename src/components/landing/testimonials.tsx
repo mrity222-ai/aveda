@@ -1,26 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
 
-const testimonials = [
-  {
-    name: "CEO of a Satisfied Client",
-    title: "Tech Solutions",
-    quote:
-      "Aveda Technologies's SaaS product revolutionized our workflow. It's intuitive, powerful, and has significantly boosted our productivity.",
-  },
-  {
-    name: "Jane Doe",
-    title: "Marketing Director, Innovate Inc.",
-    quote:
-      "The smart analytics feature gave us insights we never knew we were missing. Our campaign ROI has increased by over 50%!",
-  },
-  {
-    name: "John Smith",
-    title: "Operations Manager, Growth Co.",
-    quote:
-      "Automating our workflows saved us countless hours. The platform is a game-changer for operational efficiency.",
-  },
-];
-
 export default function Testimonials() {
   return (
     <section className="w-full py-16 md:py-24 bg-secondary/50">
@@ -34,25 +13,19 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="mx-auto grid max-w-sm items-start gap-8 sm:max-w-4xl sm:grid-cols-1 lg:max-w-none lg:grid-cols-3">
-          {testimonials.map((testimonial) => (
-            <Card
-              key={testimonial.name}
-              className="p-6 h-full flex flex-col"
-            >
-              <CardContent className="p-0 flex flex-col flex-grow">
-                <blockquote className="flex-grow">
-                  <p className="text-lg text-foreground/90">
-                    "{testimonial.quote}"
-                  </p>
-                </blockquote>
-                 <footer className="mt-6 text-base font-semibold text-foreground">
-                    {testimonial.name}
-                    <div className="text-sm font-normal text-muted-foreground">{testimonial.title}</div>
-                  </footer>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="mx-auto max-w-2xl">
+          <Card>
+            <CardContent className="p-8 text-center">
+              <blockquote className="text-xl italic text-foreground/90 relative">
+                <p className="mb-4">
+                  "Aveda Technologies's SaaS product revolutionized our workflow. It's intuitive, powerful, and has significantly boosted our productivity."
+                </p>
+                <footer className="text-base font-medium text-foreground/80 not-italic">
+                  — CEO of a Satisfied Client
+                </footer>
+              </blockquote>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
