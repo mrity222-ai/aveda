@@ -9,7 +9,7 @@ export default function UiUxDesignPage() {
     <div className="flex min-h-screen w-full flex-col bg-background">
       <Header />
       <main className="flex-1">
-        <section className="container px-4 py-12 sm:py-16 md:py-24 lg:py-32">
+        <section className="container max-w-7xl px-4 py-12 sm:py-16 md:py-20">
            <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center mb-12">
             <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">UI/UX Design</h1>
             <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
