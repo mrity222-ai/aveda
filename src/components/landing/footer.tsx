@@ -31,7 +31,7 @@ const socialLinks: { href: string; label: string; Icon: LucideIcon }[] = [
     label: "YouTube",
   },
   {
-    href: "https://facebook.com",
+    href: "https://www.facebook.com/share/1Am2GvNX5J/",
     Icon: Facebook,
     label: "Facebook",
   },
