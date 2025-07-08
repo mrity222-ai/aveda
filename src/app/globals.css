@@ -51,11 +51,11 @@ body {
     --popover-foreground: 0 0% 98%;
     --primary: 354 69% 50%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 222 47% 15%;
+    --secondary: 240 4% 16%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 222 47% 15%;
+    --muted: 240 4% 16%;
     --muted-foreground: 0 0% 63.9%;
-    --accent: 222 47% 15%;
+    --accent: 240 4% 16%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
