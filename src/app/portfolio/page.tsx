@@ -12,14 +12,6 @@ const portfolioItems = [
     tags: ['SaaS', 'AI', 'Web App'],
   },
   {
-    title: 'E-commerce Mobile App',
-    category: 'Custom Development',
-    description: 'A feature-rich mobile application for a retail client, offering a seamless shopping experience on iOS and Android.',
-    image: 'https://placehold.co/600x400.png',
-    imageHint: 'online store',
-    tags: ['Mobile', 'iOS', 'Android'],
-  },
-  {
     title: 'Enterprise ERP System',
     category: 'Custom Development',
     description: 'A bespoke Enterprise Resource Planning system built to streamline operations for a large manufacturing client.',
