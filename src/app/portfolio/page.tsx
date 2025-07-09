@@ -15,7 +15,7 @@ const portfolioItems = [
     title: 'E-commerce Mobile App',
     category: 'Custom Development',
     description: 'A feature-rich mobile application for a retail client, offering a seamless shopping experience on iOS and Android.',
-    image: 'https://storage.googleapis.com/project-av-data/media/07831d10-7243-41a6-a197-a745f4c54153.png',
+    image: 'https://placehold.co/600x400.png',
     imageHint: 'online store',
     tags: ['Mobile', 'iOS', 'Android'],
   },
