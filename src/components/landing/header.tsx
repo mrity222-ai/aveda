@@ -13,6 +13,7 @@ const navLinks = [
     { href: '/saas-products', label: 'Products' },
     { href: '/services', label: 'Services' },
     { href: '/portfolio', label: 'Portfolio' },
+    { href: '/pricing', label: 'Pricing' },
 ];
 
 const allNavLinks = [...navLinks, { href: '/contact', label: 'Contact' }];
