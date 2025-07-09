@@ -23,7 +23,7 @@ const pricingTiers = [
   },
   {
     name: "Pro",
-    price: "₹999",
+    price: "₹1349",
     period: "/mo",
     description: "For growing businesses that need more power.",
     features: [
