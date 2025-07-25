@@ -82,7 +82,7 @@ const teamMembers = [
     name: "Akash Mishra",
     role: "CEO",
     image: "/images/akash.jpg",
-  }
+  },
   // {
   //   name: "Aaditya Shukla",
   //   role: "CTO",
