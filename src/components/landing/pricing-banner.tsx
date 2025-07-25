@@ -44,7 +44,7 @@ export default function PricingBanner() {
   return (
     <section className="w-full py-16 md:py-24">
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
-        <Link href="/contact">
+        <Link href="/pricing">
           <motion.div
             whileHover={{ scale: 1.03 }}
             transition={{ type: "spring", stiffness: 300 }}
