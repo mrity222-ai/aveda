@@ -138,7 +138,7 @@ export default function AboutPage() {
               <div key={member.name} className="text-center flex flex-col items-center">
                 <Image
                   src={member.image}
-                  alt={`Photo of ${member.name}`}
+                  alt={Photo of ${member.name}}
                   width={150}
                   height={150}
                   className="w-[150px] h-[150px] rounded-full object-cover mb-4 shadow-md"
